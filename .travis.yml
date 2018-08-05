@@ -1,0 +1,6 @@
+install:
+  - npm install -g node-inspector@1.1.1
+  - npm install
+script:
+  - npm test
+  - npm run integtest
