@@ -19,7 +19,7 @@ log.info('Starting the express app');
 var app = express();
 
 //Setup DB Data, remove it later
-var dbSetup = require('./dataSetup/setup');
+//var dbSetup = require('./dataSetup/setup');
 //Setup end
 
 // view engine setup
@@ -85,7 +85,7 @@ app.listen(process.env.PORT || 5200, function () {
     log.info('Started the express microservice.');
     // Setup DB Data, remove it later
     // Comment below when not needed
-    dbSetup.init();
+    // dbSetup.init();
     // Setup end
 });
 

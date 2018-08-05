@@ -1,14 +1,16 @@
 'use strict';
 
 var express = require('express');
-var usersEndpoint = require('./users');
+// var usersEndpoint = require('./users');
+var dataEndpoint = require('./visuals');
 
 var router = express.Router();
 
 //---------------------------------------------------------------
 // API Route specification
 //---------------------------------------------------------------
-router.use('/users', usersEndpoint);
+// router.use('/users', usersEndpoint);
+router.use('/visuals', dataEndpoint);
 
 //---------------------------------------------------------------
 // Swagger API Specification - swagger-jsdoc
@@ -18,8 +20,8 @@ var swaggerJSDoc = require('swagger-jsdoc');
 var options = {
 	swaggerDefinition: {
 		info: {
-			title: 'Auth Service API',
-			description: 'Auth service API is ExpressJS based microservices',
+			title: 'Data Visuals Service API',
+			description: 'Data Visuals service API is ExpressJS based microservices',
 			version: '0.0.1',
 			contact: {
 				email: '',
@@ -35,16 +37,22 @@ var options = {
 			'https'
 		],
 		basePath: '/api',
-		tags: [{
-			name: 'Users',
-			description: 'Get details of users'
-		}],
+		tags: [
+			/* {
+				name: 'Users',
+				description: 'Get details of users'
+			}, */
+			{
+				name: 'Visuals',
+				description: 'Get data with details'
+			}
+		],
 		externalDocs: {
 			description: 'More information',
 			url: ''
 		}
 	},
-	apis: ['routes/api.js', 'routes/users.js'],
+	apis: ['routes/api.js', 'routes/visuals.js'],//, 'routes/users.js'],
 };
 
 var swaggerSpec = swaggerJSDoc(options);
