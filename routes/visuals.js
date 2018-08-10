@@ -50,10 +50,44 @@ let sampleError = {
  */
 router.get('/', function (req, res) {
     try {
-        let result = visualService.sampleData();
+        let result = visualService.sampleData('');
         res.status(200).send({ results: result });
     } catch (e) {
         log.error('Route failed with error', e);
+        res.status(500).send(e);
+    }
+});
+
+/**
+ * @swagger
+ * /visuals/somesample:
+ *   post:
+ *     summary: sample post route
+ *     description: Returns the sample data
+ *     tags:
+ *       - Visuals
+ *     produces:
+ *       - application/json
+ *     parameters:
+ *       - name: device
+ *         description: device Name
+ *         in: body
+ *         required: true
+ *         type: string
+ *         example: hero-grinder
+ *     responses:
+ *       200:
+ *         description: Successful
+ *       500:
+ *         description: Server Error
+ */
+router.post('/somesample', function (req, res) {
+    try {
+        var result = visualService.sampleData(req.body.device);
+
+        res.status(200).send({ results: result });
+    } catch (e) {
+        log.error('Route /somesample/ failed with error', e);
         res.status(500).send(e);
     }
 });
