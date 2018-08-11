@@ -83,7 +83,7 @@ router.get('/', function (req, res) {
  */
 router.post('/somesample', function (req, res) {
     try {
-        visualService.getMachineData(req.body.machine, 6000);
+        visualService.refreshMachineData();
         
         var result = visualService.sampleData(req.body.machine);
 

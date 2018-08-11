@@ -9,6 +9,7 @@ module.exports = {
     Cycletime: 30,
     PlannedStops: 30,
     Rejections: 1,
+
     configureDatesAndShift: function () {
         const currHour = this.today.hour();
         if (currHour < 6) {
@@ -33,7 +34,7 @@ module.exports = {
         const todayKey = this.today.year() + '' + Moment(this.today).format('MMM') + '' + date;
         date = this.yesterday.date().toString().length === 1 ? '0' + this.yesterday.date() : this.yesterday.date();
         const yesterdayKey = this.yesterday.year() + '' + Moment(this.yesterday).format('MMM') + '' + date;
-        const signalname = machine === 'honn' ? 'CYCLECOUNT_SP_HON_9202093' : 'PartsCount';
+        const signalname = machine.indexOf('honn') > -1 ? 'CYCLECOUNT_SP_HON_9202093' : 'PartsCount';
 
         const results = JSON.parse(data).results;
         results.forEach(function (d) {
@@ -64,9 +65,9 @@ module.exports = {
                             shiftAEndDateTime: shiftAEndDateTime,
                             shiftBEndDateTime: shiftBEndDateTime,
                             shiftCEndDateTime: shiftCEndDateTime,
-                            A: { shiftStart: shiftAStartDateTime, shiftEnd: shiftAEndDateTime, partsCount: 0, OEE: 0, Deg: 0, plannedCount: 0, breakDownTime: 0, data: [] },
-                            B: { shiftStart: shiftAEndDateTime, shiftEnd: shiftBEndDateTime, partsCount: 0, OEE: 0, Deg: 0, plannedCount: 0, breakDownTime: 0, data: [] },
-                            C: { shiftStart: shiftBEndDateTime, shiftEnd: shiftCEndDateTime, partsCount: 0, OEE: 0, Deg: 0, plannedCount: 0, breakDownTime: 0, data: [] },
+                            A: { shiftStart: shiftAStartDateTime, shiftEnd: shiftAEndDateTime, partsCount: 0, OEE: 0, plannedCount: 0, breakDownTime: 0, data: [] },
+                            B: { shiftStart: shiftAEndDateTime, shiftEnd: shiftBEndDateTime, partsCount: 0, OEE: 0, plannedCount: 0, breakDownTime: 0, data: [] },
+                            C: { shiftStart: shiftBEndDateTime, shiftEnd: shiftCEndDateTime, partsCount: 0, OEE: 0, plannedCount: 0, breakDownTime: 0, data: [] },
                             OLE: 0
                         }
                     }
@@ -82,11 +83,6 @@ module.exports = {
             }
         });
         this.calculateValues(processedData, machine);
-        /* switch (machine) {
-            case 'honn': honnData = processedData; break;
-            case 'frd': frdData = processedData; break;
-            case 'fb': fbData = processedData; break;
-        } */
         return processedData;
     },
     calculateValues: function (processedData, machine) {
@@ -148,16 +144,16 @@ module.exports = {
         });
         if (partsCount >= 0) {
             const result = this.calculateOEE(partsCount, downTime > 480 ? 0 : downTime, machine);
-            return { partsCount: machine === 'frd' ? partsCount * 2 : partsCount, OEE: result.OEE, plannedCount: result.plannedCount, breakDownTime: downTime };
+            return { partsCount: machine.indexOf('frd') > -1 ? partsCount * 2 : partsCount, OEE: result.OEE, plannedCount: result.plannedCount, breakDownTime: downTime };
         }
     },
     calculateOEE: function (partsCount, downTime, machine) {
-        const PartsCount = machine === 'frd' ? partsCount * 2 : partsCount;
+        const PartsCount = machine.indexOf('frd') > -1 ? partsCount * 2 : partsCount;
         const AvailableTime = this.ShiftTime - this.PlannedStops;
         const NetUptime = AvailableTime - (downTime - this.PlannedStops);
         const goodCount = PartsCount <= 0 ? 0 : (PartsCount - this.Rejections);
-        const cycleTime = machine === 'frd' ? 300 : this.Cycletime;
-        const PlannedCount = (AvailableTime / (cycleTime / 60)) * (machine === 'frd' ? 2 : 1);
+        const cycleTime = machine.indexOf('frd') > -1 ? 300 : this.Cycletime;
+        const PlannedCount = (AvailableTime / (cycleTime / 60)) * (machine.indexOf('frd') > -1 ? 2 : 1);
         const Quality = goodCount <= 0 ? 0 : (goodCount / PartsCount);
         const Availability = NetUptime / AvailableTime;
         const Performance = PartsCount / PlannedCount;

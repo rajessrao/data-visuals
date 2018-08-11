@@ -16,9 +16,10 @@ module.exports = {
         }
         return Res;
     },
-    getMachineData: async function (machine, limit = 6000) { // DM_hero_sm_honn_mtl, DM_hero_sm_frd_mtl, DM_hero_sm_fb_mtl
-        if (machine !== '') {
-            https.get(config.apiEndpoint + '&a=find&ot=T_heromotocorp_iirp.' + machine + '&lmt=' + limit, (res) => {
+    refreshMachineData: async function () {
+        var machines = ['DM_hero_sm_honn_mtl', 'DM_hero_sm_frd_mtl', 'DM_hero_sm_fb_mtl'];
+        machines.forEach(function (machine) {
+            https.get(config.apiEndpoint + '&a=find&ot=T_heromotocorp_iirp.' + machine + '&lmt=6000', (res) => {
                 let data = '';
 
                 res.on('data', (chunk) => {
@@ -26,13 +27,12 @@ module.exports = {
                 });
 
                 res.on('end', () => {
-                    var processedData = computeService.plotDataDateShiftWise(data, 'frd');
-                    console.log(processedData);
-                    return processedData;
+                    var processedData = computeService.plotDataDateShiftWise(data, machine);
+                    console.log(machine, processedData);
                 });
             }).on("error", (err) => {
                 console.log("Error: " + err.message);
             });
-        }
+        });
     }
 }
