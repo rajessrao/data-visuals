@@ -83,9 +83,13 @@ router.get('/', function (req, res) {
  */
 router.post('/somesample', function (req, res) {
     try {
-        var result = visualService.sampleData(req.body.device);
+        visualService.getMachineData(req.body.machine, 1000);
+        
+        var result = visualService.sampleData(req.body.machine);
 
-        res.status(200).send({ results: result });
+        result.then(function (data) {
+            res.status(200).send({ results: data });
+        })
     } catch (e) {
         log.error('Route /somesample/ failed with error', e);
         res.status(500).send(e);
