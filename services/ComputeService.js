@@ -1,6 +1,4 @@
 'use strict';
-var config = require('../config');
-var jwt = require('jsonwebtoken');
 var Moment = require('moment');
 
 module.exports = {
@@ -29,6 +27,7 @@ module.exports = {
         }
     },
     plotDataDateShiftWise: function (data, machine) {
+        this.configureDatesAndShift();
         const processedData = [];
         let date = this.today.date().toString().length === 1 ? '0' + this.today.date() : this.today.date();
         const todayKey = this.today.year() + '' + Moment(this.today).format('MMM') + '' + date;
@@ -43,17 +42,15 @@ module.exports = {
             });
             const enddate = signal.enddate;
             const dateSplit = enddate.split(' ');
-            const currDate = Moment([dateSplit[5], dateSplit[1], dateSplit[2]]);
+            const currDate = Moment(new Date(dateSplit[5] +' '+ dateSplit[1] +' '+ dateSplit[2])); // Moment([dateSplit[5], dateSplit[1], dateSplit[2]]);
             const key = dateSplit[5] + '' + dateSplit[1] + '' + dateSplit[2];
-            
             if (signal) { // && key === todayKey || key === yesterdayKey) {
                 if (processedData[key] === undefined) {
                     processedData[key] = null;
                 }
                 if (processedData[key] !== undefined) {
-                    const currDateTime = Moment(dateSplit[5] + ' ' + dateSplit[1] + ' ' + dateSplit[2] + ' ' + dateSplit[3]);
+                    const currDateTime = Moment(new Date(dateSplit[5] +' '+ dateSplit[1] +' '+ dateSplit[2] +' '+ dateSplit[3])); // Moment([dateSplit[5], dateSplit[1], dateSplit[2], dateSplit[3]]);
                     let value = signal.value;
-                    console.log('Value ==> ', value, key);
                     if (value < 0 || value === null) {
                         value = 0;
                     }
@@ -84,7 +81,6 @@ module.exports = {
                 }
             }
         });
-        //console.log('ProcessedData ==> ', processedData);
         this.calculateValues(processedData, machine);
         /* switch (machine) {
             case 'honn': honnData = processedData; break;
@@ -106,7 +102,7 @@ module.exports = {
                             processedData[p][s].plannedCount = result.plannedCount
                             delete processedData[p][s].data;
                         } else if (s !== 'OLE') {
-                            // delete processedData[p][s];
+                            delete processedData[p][s];
                         }
                     }
                 }
