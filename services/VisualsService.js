@@ -17,7 +17,7 @@ module.exports = {
         return Res;
     },
     refreshMachineData: async function () {
-        var machines = ['DM_hero_sm_honn_mtl', 'DM_hero_sm_frd_mtl', 'DM_hero_sm_fb_mtl'];
+        var machines = ['DM_hero_sm_honn_mtl', 'DM_hero_sm_frd_mtl', 'DM_hero_sm_fb_mtl']; // DM_hero_hw_grind_mtl
         machines.forEach(function (machine) {
             https.get(config.apiEndpoint + '&a=find&ot=T_heromotocorp_iirp.' + machine + '&lmt=6000', (res) => {
                 let data = '';
@@ -28,7 +28,7 @@ module.exports = {
 
                 res.on('end', () => {
                     var processedData = computeService.plotDataDateShiftWise(data, machine);
-                    console.log(machine, processedData);
+                    console.log(machine, '\n=======================================>\n', processedData);
                 });
             }).on("error", (err) => {
                 console.log("Error: " + err.message);

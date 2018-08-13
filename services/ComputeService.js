@@ -43,14 +43,14 @@ module.exports = {
             });
             const enddate = signal.enddate;
             const dateSplit = enddate.split(' ');
-            const currDate = Moment(new Date(dateSplit[5] +' '+ dateSplit[1] +' '+ dateSplit[2])); // Moment([dateSplit[5], dateSplit[1], dateSplit[2]]);
+            const currDate = Moment(new Date(dateSplit[5] + ' ' + dateSplit[1] + ' ' + dateSplit[2])); // Moment([dateSplit[5], dateSplit[1], dateSplit[2]]);
             const key = dateSplit[5] + '' + dateSplit[1] + '' + dateSplit[2];
             if (signal) { // && key === todayKey || key === yesterdayKey) {
                 if (processedData[key] === undefined) {
                     processedData[key] = null;
                 }
                 if (processedData[key] !== undefined) {
-                    const currDateTime = Moment(new Date(dateSplit[5] +' '+ dateSplit[1] +' '+ dateSplit[2] +' '+ dateSplit[3])); // Moment([dateSplit[5], dateSplit[1], dateSplit[2], dateSplit[3]]);
+                    const currDateTime = Moment(new Date(dateSplit[5] + ' ' + dateSplit[1] + ' ' + dateSplit[2] + ' ' + dateSplit[3])); // Moment([dateSplit[5], dateSplit[1], dateSplit[2], dateSplit[3]]);
                     let value = signal.value;
                     if (value < 0 || value === null) {
                         value = 0;
