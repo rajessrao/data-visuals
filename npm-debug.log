@@ -24,7 +24,7 @@
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
 15 verbose pkgid data-visuals@0.0.1
 16 verbose cwd /home/rajes/Documents/repos/data-visuals
-17 error Linux 4.15.0-29-generic
+17 error Linux 4.15.0-32-generic
 18 error argv "/usr/bin/node" "/usr/bin/npm" "start"
 19 error node v8.10.0
 20 error npm  v3.5.2

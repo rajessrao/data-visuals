@@ -93,11 +93,16 @@ module.exports = {
                 for (var s in processedData[p]) {
                     if (processedData[p][s] !== undefined) {
                         if (processedData[p][s].data !== undefined) {
-                            const result = this.calculatePartsCount(processedData[p][s].data, processedData[p][s].shiftStart, processedData[p][s].shiftEnd, machine);
+                            /* const result = this.calculatePartsCount(processedData[p][s].data, processedData[p][s].shiftStart, processedData[p][s].shiftEnd, machine);
                             processedData[p][s].partsCount = result.partsCount;
                             processedData[p][s].OEE = result.OEE;
                             processedData[p][s].breakDownTime = result.breakDownTime;
-                            processedData[p][s].plannedCount = result.plannedCount
+                            processedData[p][s].plannedCount = result.plannedCount; */
+                            const result = this.calculatePartsCountDesc(processedData[p][s].data, processedData[p][s].shiftStart, processedData[p][s].shiftEnd, machine);
+                            processedData[p][s].partsCount = result.partsCount;
+                            processedData[p][s].OEE = result.OEE;
+                            processedData[p][s].breakDownTime = result.breakDownTime;
+                            processedData[p][s].plannedCount = result.plannedCount;
                             delete processedData[p][s].data;
                         } else if (s !== 'OLE') {
                             delete processedData[p][s];
@@ -149,6 +154,56 @@ module.exports = {
             return { partsCount: machine.indexOf('frd') > -1 ? partsCount * 2 : partsCount, OEE: result.OEE, plannedCount: result.plannedCount, breakDownTime: downTime };
         }
     },
+    calculatePartsCountDesc: function (data, shiftStart, shiftEnd, machine) {
+        let prevValue = 0, partsCount = 0;
+        let prevDateTime, downTime = 0;
+        let changeFlag = false;
+        let plansActuals = [];
+        data.sort(function (a, b) { return a.enddate - b.enddate });
+        data.forEach(function (d) {
+            const currValue = parseInt(d.value);
+            if (!isNaN(currValue)) {
+                if (data.indexOf(d) === 0 && prevValue === 0) {
+                    prevValue = currValue;
+                    prevDateTime = shiftStart;
+                    changeFlag = true;
+                } else {
+                    let diff = currValue - prevValue;
+                    if (diff > 0) {
+                        partsCount += diff;
+                        // Newly added start
+                        let currMin = d.enddate.diff(shiftStart, 'minutes'); // currEnd.diff(prevDateTime, 'minutes');
+                        const AvailableTime = currMin - 30;
+                        const cycleTime = machine.indexOf('frd') > -1 ? 300 : 30;
+                        const PlannedCount = (AvailableTime / (cycleTime / 60)) * (machine.indexOf('frd') > -1 ? 2 : 1);
+                        plansActuals.push({ Time: d.enddate.format('HH:mm:ss'), plan: PlannedCount, actual: partsCount });
+                        // Newly added end
+                        prevValue = currValue;
+                        if (changeFlag || data.indexOf(d) === data.length - 1) {
+                            const currdate = data.indexOf(d) === data.length - 1 ? shiftEnd : d.enddate;
+                            const differenceInTime = (prevDateTime.diff(currdate, 'minutes')) * -1;
+                            if (differenceInTime > 30) {
+                                downTime += differenceInTime;
+                                changeFlag = false;
+                            } else if (differenceInTime <= 30) {
+                                prevDateTime = d.enddate;
+                                changeFlag = false;
+                            }
+                        } else if (!changeFlag) {
+                            prevDateTime = d.enddate;
+                            changeFlag = true;
+                        }
+                    } else {
+                        prevValue = currValue;
+                    }
+                }
+            }
+        });
+        if (partsCount >= 0) {
+            const result = this.calculateOEE(partsCount, downTime > 480 ? 0 : downTime, machine);
+            return { partsCount: machine.indexOf('frd') > -1 ? partsCount * 2 : partsCount, OEE: result.OEE, plannedCount: result.plannedCount, breakDownTime: downTime, plansActuals: plansActuals };
+        }
+    },
     calculateOEE: function (partsCount, downTime, machine) {
         const PartsCount = machine.indexOf('frd') > -1 ? partsCount * 2 : partsCount;
         const AvailableTime = this.ShiftTime - this.PlannedStops;
@@ -164,20 +219,62 @@ module.exports = {
         return { OEE: isNaN(OEE) ? 0 : (typeof (OEE) === 'number' ? OEE.toFixed(2) : parseFloat(OEE).toFixed(2)), plannedCount: PlannedCount };
     },
     getAlarms: function (data, machine) {
+        let SpindleOilFlow = '', SpindleOilTemp = '', CoolantFlow = '';
+        const results = JSON.parse(data).results;
+        results.forEach(function (d) {
+            if (SpindleOilFlow === '') {
+                const oilFlowSignal = d.body.signals.find(function (s) {
+                    return s.signalname.toLowerCase() === 'oil_flow';
+                });
+                if (oilFlowSignal) {
+                    SpindleOilFlow = oilFlowSignal.value;
+                }
+            }
+            if (SpindleOilTemp === '') {
+                const oilTempSignal = d.body.signals.find(function (s) {
+                    return s.signalname.toLowerCase() === 'oil_temperature';
+                });
+                if (oilTempSignal) {
+                    SpindleOilTemp = oilTempSignal.value;
+                }
+            }
+            if (CoolantFlow === '') {
+                const coolantFlowSignal = d.body.signals.find(function (s) {
+                    return s.signalname.toLowerCase() === 'coolant_flow';
+                });
+                if (coolantFlowSignal) {
+                    CoolantFlow = coolantFlowSignal.value;
+                }
+            }
+        });
         let Alarms = {
-            "XSlideLoad": "42%",
-            "XSlideLubPressure": "0.5",
-            "XAxisMotorTemp": "20",
-            "ZSlideLoad": "29%",
-            "ZSlideLubPressure": "0.2",
-            "ZAxisMotorTemp": "30",
-            "SpinOilAlertBypassed": "True",
-            "SpindleOilTemp": "25",
-            "SpindleLubrication": "340",
-            "WorkHeadRPM": ".5/.2",
-            "SpindleOilFlow": "5",
-            "CoolantFlow": "25"
+            'XSlideLoad': '42%',
+            'XSlideLubPressure': '0.5',
+            'XAxisMotorTemp': '20',
+            'ZSlideLoad': '29%',
+            'ZSlideLubPressure': '0.2',
+            'ZAxisMotorTemp': '30',
+            'SpinOilAlertBypassed': 'True',
+            'SpindleOilTemp': SpindleOilTemp || '25',
+            'SpindleLubrication': '340',
+            'WorkHeadRPM': '.5/.2',
+            'SpindleOilFlow': SpindleOilFlow || '5',
+            'CoolantFlow': CoolantFlow || '25'
+        };
+        return Alarms;
+    },
+    getCurrShiftAccurals: function (data) {
+        if (data['2018May24'].A) {
+            let currShiftData = data['2018May24'].A;
+            let result = {
+                'TotalCount': currShiftData.partsCount || '607',
+                'TotalOK': (currShiftData.partsCount - 7) || '600',
+                'TotalNG': '2',
+                'ReworkCount': '5',
+                'Inspection': parseInt(((currShiftData.partsCount - 7) / (currShiftData.partsCount)) * 100) + '%' || '98%',
+                'AvgCycleTime': '30'
+            };
+            return result;
         }
-        
     }
 }

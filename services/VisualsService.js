@@ -19,11 +19,13 @@ module.exports = {
     },
     refreshMachineData: async function () {
         var data = fs.readFileSync('./mockdata/DM_hero_hw_grind_mtl.json', 'utf8');
-        var processedData = computeService.plotDataDateShiftWise(data, 'grind');
-        console.log('\n=======================================>\n', processedData);
-        /* var data = fs.readFileSync('./mockdata/DM_hero_sm_frd_mtl.json', 'utf8');
-        var processedData = computeService.plotDataDateShiftWise(data, 'frd');
-        console.log('\n=======================================>\n', processedData); */
+        var machine = 'DM_hero_hw_grind_mtl';
+        var processedData = computeService.plotDataDateShiftWise(data, machine);
+        console.log(machine, '\n=======================================\n', processedData, '\n');
+        var alarms = computeService.getAlarms(data, machine);
+        console.log(machine, '\n=======================================\n', alarms, '\n');
+        var currShift = computeService.getCurrShiftAccurals(processedData);
+        console.log(machine, '\n=======================================\n', currShift, '\n');
         /* var machines = ['DM_hero_sm_honn_mtl', 'DM_hero_sm_frd_mtl', 'DM_hero_sm_fb_mtl']; // DM_hero_hw_grind_mtl
         machines.forEach(function (machine) {
             https.get(config.apiEndpoint + '&a=find&ot=T_heromotocorp_iirp.' + machine + '&lmt=6000', (res) => {
