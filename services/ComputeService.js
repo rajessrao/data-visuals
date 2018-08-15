@@ -41,11 +41,12 @@ module.exports = {
             const signal = d.body.signals.find(function (s) {
                 return s.signalname === signalname;
             });
-            const enddate = signal.enddate;
-            const dateSplit = enddate.split(' ');
-            const currDate = Moment(new Date(dateSplit[5] + ' ' + dateSplit[1] + ' ' + dateSplit[2])); // Moment([dateSplit[5], dateSplit[1], dateSplit[2]]);
-            const key = dateSplit[5] + '' + dateSplit[1] + '' + dateSplit[2];
-            if (signal) { // && key === todayKey || key === yesterdayKey) {
+            if (signal) {
+                const enddate = machine.indexOf('grind') > -1 ? signal.updatedate : signal.enddate;
+                const dateSplit = enddate.split(' ');
+                const currDate = Moment(new Date(dateSplit[5] + ' ' + dateSplit[1] + ' ' + dateSplit[2])); // Moment([dateSplit[5], dateSplit[1], dateSplit[2]]);
+                const key = dateSplit[5] + '' + dateSplit[1] + '' + dateSplit[2];
+                // if (key === todayKey || key === yesterdayKey) {
                 if (processedData[key] === undefined) {
                     processedData[key] = null;
                 }
@@ -80,6 +81,7 @@ module.exports = {
                         processedData[key].C.data.push({ id: d._id, enddate: currDateTime, value: value });
                     }
                 }
+                // }
             }
         });
         this.calculateValues(processedData, machine);
@@ -160,5 +162,22 @@ module.exports = {
         const OEE = (Availability * Performance * Quality) * 100;
 
         return { OEE: isNaN(OEE) ? 0 : (typeof (OEE) === 'number' ? OEE.toFixed(2) : parseFloat(OEE).toFixed(2)), plannedCount: PlannedCount };
+    },
+    getAlarms: function (data, machine) {
+        let Alarms = {
+            "XSlideLoad": "42%",
+            "XSlideLubPressure": "0.5",
+            "XAxisMotorTemp": "20",
+            "ZSlideLoad": "29%",
+            "ZSlideLubPressure": "0.2",
+            "ZAxisMotorTemp": "30",
+            "SpinOilAlertBypassed": "True",
+            "SpindleOilTemp": "25",
+            "SpindleLubrication": "340",
+            "WorkHeadRPM": ".5/.2",
+            "SpindleOilFlow": "5",
+            "CoolantFlow": "25"
+        }
+        
     }
 }

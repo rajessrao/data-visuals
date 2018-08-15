@@ -5,6 +5,7 @@ var http = require('http');
 var https = require('https');
 var Request = require('request');
 var computeService = require('./ComputeService');
+var fs = require('fs');
 
 module.exports = {
     sampleData: async function (machine) {
@@ -17,7 +18,13 @@ module.exports = {
         return Res;
     },
     refreshMachineData: async function () {
-        var machines = ['DM_hero_sm_honn_mtl', 'DM_hero_sm_frd_mtl', 'DM_hero_sm_fb_mtl']; // DM_hero_hw_grind_mtl
+        var data = fs.readFileSync('./mockdata/DM_hero_hw_grind_mtl.json', 'utf8');
+        var processedData = computeService.plotDataDateShiftWise(data, 'grind');
+        console.log('\n=======================================>\n', processedData);
+        /* var data = fs.readFileSync('./mockdata/DM_hero_sm_frd_mtl.json', 'utf8');
+        var processedData = computeService.plotDataDateShiftWise(data, 'frd');
+        console.log('\n=======================================>\n', processedData); */
+        /* var machines = ['DM_hero_sm_honn_mtl', 'DM_hero_sm_frd_mtl', 'DM_hero_sm_fb_mtl']; // DM_hero_hw_grind_mtl
         machines.forEach(function (machine) {
             https.get(config.apiEndpoint + '&a=find&ot=T_heromotocorp_iirp.' + machine + '&lmt=6000', (res) => {
                 let data = '';
@@ -33,6 +40,6 @@ module.exports = {
             }).on("error", (err) => {
                 console.log("Error: " + err.message);
             });
-        });
+        }); */
     }
 }

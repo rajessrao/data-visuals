@@ -1,0 +1,1774 @@
+{
+    "results": [
+        {
+            "_id": "5b71af7850c0dac07a3027f7",
+            "dateTime": {
+                "seconds": "1534177144",
+                "date": "2018-08-13",
+                "time": "16:19:04",
+                "day": "Mon",
+                "tz": "+0000 UTC"
+            },
+            "server": {
+                "USER": "www-data",
+                "HOME": "/var/www",
+                "HTTP_USER_AGENT": "Java/1.8.0_171",
+                "HTTP_ACCEPT_CHARSET": "big5, big5-hkscs, cesu-8, euc-jp, euc-kr, gb18030, gb2312, gbk, ibm-thai, ibm00858, ibm01140, ibm01141, ibm01142, ibm01143, ibm01144, ibm01145, ibm01146, ibm01147, ibm01148, ibm01149, ibm037, ibm1026, ibm1047, ibm273, ibm277, ibm278, ibm280, ibm284, ibm285, ibm290, ibm297, ibm420, ibm424, ibm437, ibm500, ibm775, ibm850, ibm852, ibm855, ibm857, ibm860, ibm861, ibm862, ibm863, ibm864, ibm865, ibm866, ibm868, ibm869, ibm870, ibm871, ibm918, iso-2022-cn, iso-2022-jp, iso-2022-jp-2, iso-2022-kr, iso-8859-1, iso-8859-13, iso-8859-15, iso-8859-2, iso-8859-3, iso-8859-4, iso-8859-5, iso-8859-6, iso-8859-7, iso-8859-8, iso-8859-9, jis_x0201, jis_x0212-1990, koi8-r, koi8-u, shift_jis, tis-620, us-ascii, utf-16, utf-16be, utf-16le, utf-32, utf-32be, utf-32le, utf-8, windows-1250, windows-1251, windows-1252, windows-1253, windows-1254, windows-1255, windows-1256, windows-1257, windows-1258, windows-31j, x-big5-hkscs-2001, x-big5-solaris, x-euc-jp-linux, x-euc-tw, x-eucjp-open, x-ibm1006, x-ibm1025, x-ibm1046, x-ibm1097, x-ibm1098, x-ibm1112, x-ibm1122, x-ibm1123, x-ibm1124, x-ibm1166, x-ibm1364, x-ibm1381, x-ibm1383, x-ibm300, x-ibm33722, x-ibm737, x-ibm833, x-ibm834, x-ibm856, x-ibm874, x-ibm875, x-ibm921, x-ibm922, x-ibm930, x-ibm933, x-ibm935, x-ibm937, x-ibm939, x-ibm942, x-ibm942c, x-ibm943, x-ibm943c, x-ibm948, x-ibm949, x-ibm949c, x-ibm950, x-ibm964, x-ibm970, x-iscii91, x-iso-2022-cn-cns, x-iso-2022-cn-gb, x-iso-8859-11, x-jis0208, x-jisautodetect, x-johab, x-macarabic, x-maccentraleurope, x-maccroatian, x-maccyrillic, x-macdingbat, x-macgreek, x-machebrew, x-maciceland, x-macroman, x-macromania, x-macsymbol, x-macthai, x-macturkish, x-macukraine, x-ms932_0213, x-ms950-hkscs, x-ms950-hkscs-xp, x-mswin-936, x-pck, x-sjis_0213, x-utf-16le-bom, x-utf-32be-bom, x-utf-32le-bom, x-windows-50220, x-windows-50221, x-windows-874, x-windows-949, x-windows-950, x-windows-iso2022jp",
+                "HTTP_CONTENT_TYPE": "application/json",
+                "HTTP_ACCEPT": "*/*",
+                "HTTP_CONTENT_LENGTH": "2532",
+                "HTTP_CONNECTION": "close",
+                "HTTP_HOST": "data4.iotworldlabs.io",
+                "REDIRECT_STATUS": "200",
+                "SERVER_NAME": "data4.iotworldlabs.io",
+                "SERVER_PORT": "443",
+                "SERVER_ADDR": "10.0.0.18",
+                "REMOTE_PORT": "58774",
+                "REMOTE_ADDR": "52.191.161.117",
+                "SERVER_SOFTWARE": "nginx/1.10.3",
+                "GATEWAY_INTERFACE": "CGI/1.1",
+                "HTTPS": "on",
+                "REQUEST_SCHEME": "https",
+                "SERVER_PROTOCOL": "HTTP/1.0",
+                "DOCUMENT_ROOT": "/var/www/data4.iotworldlabs.io",
+                "DOCUMENT_URI": "/DeviceId/HERO-SM-FRD-MTL.php",
+                "REQUEST_URI": "/DeviceId/HERO-SM-FRD-MTL",
+                "SCRIPT_NAME": "/DeviceId/HERO-SM-FRD-MTL.php",
+                "CONTENT_LENGTH": "2532",
+                "CONTENT_TYPE": "application/json",
+                "REQUEST_METHOD": "POST",
+                "QUERY_STRING": "",
+                "SCRIPT_FILENAME": "/var/www/data4.iotworldlabs.io/DeviceId/HERO-SM-FRD-MTL.php",
+                "PATH_INFO": "",
+                "FCGI_ROLE": "RESPONDER",
+                "PHP_SELF": "/DeviceId/HERO-SM-FRD-MTL.php",
+                "REQUEST_TIME_FLOAT": 1534177144.7837,
+                "REQUEST_TIME": 1534177144
+            },
+            "body": {
+                "DeviceId": "HERO-SM-FRD-MTL",
+                "TimeStamp": "Aug 13, 2018 9:49:02 PM",
+                "signals": [
+                    {
+                        "signalname": "AlarmSignal",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "PartsCount",
+                        "value": "59",
+                        "enddate": "Mon Aug 13 21:12:49 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleLoad_0_path1",
+                        "value": "1.0",
+                        "enddate": "Mon Aug 13 21:12:47 IST 2018"
+                    },
+                    {
+                        "signalname": "FeedRate",
+                        "value": "34414",
+                        "enddate": "Mon Aug 13 21:12:49 IST 2018"
+                    },
+                    {
+                        "signalname": "X_AXIS_BALL-SCREW_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Y_AXIS_BALL-SCREW_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Z_AXIS_BALL-SCREW_LIFE",
+                        "value": "2027",
+                        "enddate": "Mon Aug 13 19:49:45 IST 2018"
+                    },
+                    {
+                        "signalname": "X_AXIS_GUIDE-WAYS_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Y_AXIS_GUIDE-WAYS_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Z_AXIS_GUIDE-WAYS_LIFE",
+                        "value": "2027",
+                        "enddate": "Mon Aug 13 19:49:45 IST 2018"
+                    },
+                    {
+                        "signalname": "SPINDLE_BEARING_LIFE",
+                        "value": "2205",
+                        "enddate": "Mon Aug 13 19:37:06 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleSpeed",
+                        "value": "11",
+                        "enddate": "Mon Aug 13 21:12:50 IST 2018"
+                    },
+                    {
+                        "signalname": "MainProgram_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleTemp_0_path1_SP_FRD_9202097",
+                        "value": "39.0",
+                        "enddate": "Mon Aug 13 21:49:01 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleLeakResistData_0_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:23:01 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleTotalRev1_0_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:23:01 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleTotalRev2_0_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:23:01 IST 2018"
+                    },
+                    {
+                        "signalname": "MainProgram_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "ActProgram_path1_SP_FRD_9202097",
+                        "value": "//CNC_MEM/USER/PATH1/O8900",
+                        "enddate": "Mon Aug 13 21:12:31 IST 2018"
+                    },
+                    {
+                        "signalname": "SigSBK_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "OPERATE",
+                        "value": "true",
+                        "enddate": "Mon Aug 13 21:12:49 IST 2018"
+                    },
+                    {
+                        "signalname": "DISCONNECT",
+                        "value": "true",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "EMERGENCY",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "STOP",
+                        "value": "false",
+                        "enddate": "Mon Aug 13 21:12:49 IST 2018"
+                    },
+                    {
+                        "signalname": "SUSPEND",
+                        "value": "true",
+                        "enddate": "Mon Aug 13 20:02:18 IST 2018"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "5b71ad2238ef8e457747beb7",
+            "dateTime": {
+                "seconds": "1534176546",
+                "date": "2018-08-13",
+                "time": "16:09:06",
+                "day": "Mon",
+                "tz": "+0000 UTC"
+            },
+            "server": {
+                "USER": "www-data",
+                "HOME": "/var/www",
+                "HTTP_USER_AGENT": "Java/1.8.0_171",
+                "HTTP_ACCEPT_CHARSET": "big5, big5-hkscs, cesu-8, euc-jp, euc-kr, gb18030, gb2312, gbk, ibm-thai, ibm00858, ibm01140, ibm01141, ibm01142, ibm01143, ibm01144, ibm01145, ibm01146, ibm01147, ibm01148, ibm01149, ibm037, ibm1026, ibm1047, ibm273, ibm277, ibm278, ibm280, ibm284, ibm285, ibm290, ibm297, ibm420, ibm424, ibm437, ibm500, ibm775, ibm850, ibm852, ibm855, ibm857, ibm860, ibm861, ibm862, ibm863, ibm864, ibm865, ibm866, ibm868, ibm869, ibm870, ibm871, ibm918, iso-2022-cn, iso-2022-jp, iso-2022-jp-2, iso-2022-kr, iso-8859-1, iso-8859-13, iso-8859-15, iso-8859-2, iso-8859-3, iso-8859-4, iso-8859-5, iso-8859-6, iso-8859-7, iso-8859-8, iso-8859-9, jis_x0201, jis_x0212-1990, koi8-r, koi8-u, shift_jis, tis-620, us-ascii, utf-16, utf-16be, utf-16le, utf-32, utf-32be, utf-32le, utf-8, windows-1250, windows-1251, windows-1252, windows-1253, windows-1254, windows-1255, windows-1256, windows-1257, windows-1258, windows-31j, x-big5-hkscs-2001, x-big5-solaris, x-euc-jp-linux, x-euc-tw, x-eucjp-open, x-ibm1006, x-ibm1025, x-ibm1046, x-ibm1097, x-ibm1098, x-ibm1112, x-ibm1122, x-ibm1123, x-ibm1124, x-ibm1166, x-ibm1364, x-ibm1381, x-ibm1383, x-ibm300, x-ibm33722, x-ibm737, x-ibm833, x-ibm834, x-ibm856, x-ibm874, x-ibm875, x-ibm921, x-ibm922, x-ibm930, x-ibm933, x-ibm935, x-ibm937, x-ibm939, x-ibm942, x-ibm942c, x-ibm943, x-ibm943c, x-ibm948, x-ibm949, x-ibm949c, x-ibm950, x-ibm964, x-ibm970, x-iscii91, x-iso-2022-cn-cns, x-iso-2022-cn-gb, x-iso-8859-11, x-jis0208, x-jisautodetect, x-johab, x-macarabic, x-maccentraleurope, x-maccroatian, x-maccyrillic, x-macdingbat, x-macgreek, x-machebrew, x-maciceland, x-macroman, x-macromania, x-macsymbol, x-macthai, x-macturkish, x-macukraine, x-ms932_0213, x-ms950-hkscs, x-ms950-hkscs-xp, x-mswin-936, x-pck, x-sjis_0213, x-utf-16le-bom, x-utf-32be-bom, x-utf-32le-bom, x-windows-50220, x-windows-50221, x-windows-874, x-windows-949, x-windows-950, x-windows-iso2022jp",
+                "HTTP_CONTENT_TYPE": "application/json",
+                "HTTP_ACCEPT": "*/*",
+                "HTTP_CONTENT_LENGTH": "2532",
+                "HTTP_CONNECTION": "close",
+                "HTTP_HOST": "data4.iotworldlabs.io",
+                "REDIRECT_STATUS": "200",
+                "SERVER_NAME": "data4.iotworldlabs.io",
+                "SERVER_PORT": "443",
+                "SERVER_ADDR": "10.0.0.18",
+                "REMOTE_PORT": "57136",
+                "REMOTE_ADDR": "52.191.161.117",
+                "SERVER_SOFTWARE": "nginx/1.10.3",
+                "GATEWAY_INTERFACE": "CGI/1.1",
+                "HTTPS": "on",
+                "REQUEST_SCHEME": "https",
+                "SERVER_PROTOCOL": "HTTP/1.0",
+                "DOCUMENT_ROOT": "/var/www/data4.iotworldlabs.io",
+                "DOCUMENT_URI": "/DeviceId/HERO-SM-FRD-MTL.php",
+                "REQUEST_URI": "/DeviceId/HERO-SM-FRD-MTL",
+                "SCRIPT_NAME": "/DeviceId/HERO-SM-FRD-MTL.php",
+                "CONTENT_LENGTH": "2532",
+                "CONTENT_TYPE": "application/json",
+                "REQUEST_METHOD": "POST",
+                "QUERY_STRING": "",
+                "SCRIPT_FILENAME": "/var/www/data4.iotworldlabs.io/DeviceId/HERO-SM-FRD-MTL.php",
+                "PATH_INFO": "",
+                "FCGI_ROLE": "RESPONDER",
+                "PHP_SELF": "/DeviceId/HERO-SM-FRD-MTL.php",
+                "REQUEST_TIME_FLOAT": 1534176546.4408,
+                "REQUEST_TIME": 1534176546
+            },
+            "body": {
+                "DeviceId": "HERO-SM-FRD-MTL",
+                "TimeStamp": "Aug 13, 2018 9:39:03 PM",
+                "signals": [
+                    {
+                        "signalname": "AlarmSignal",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "PartsCount",
+                        "value": "59",
+                        "enddate": "Mon Aug 13 21:12:49 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleLoad_0_path1",
+                        "value": "1.0",
+                        "enddate": "Mon Aug 13 21:12:47 IST 2018"
+                    },
+                    {
+                        "signalname": "FeedRate",
+                        "value": "34414",
+                        "enddate": "Mon Aug 13 21:12:49 IST 2018"
+                    },
+                    {
+                        "signalname": "X_AXIS_BALL-SCREW_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Y_AXIS_BALL-SCREW_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Z_AXIS_BALL-SCREW_LIFE",
+                        "value": "2027",
+                        "enddate": "Mon Aug 13 19:49:45 IST 2018"
+                    },
+                    {
+                        "signalname": "X_AXIS_GUIDE-WAYS_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Y_AXIS_GUIDE-WAYS_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Z_AXIS_GUIDE-WAYS_LIFE",
+                        "value": "2027",
+                        "enddate": "Mon Aug 13 19:49:45 IST 2018"
+                    },
+                    {
+                        "signalname": "SPINDLE_BEARING_LIFE",
+                        "value": "2205",
+                        "enddate": "Mon Aug 13 19:37:06 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleSpeed",
+                        "value": "11",
+                        "enddate": "Mon Aug 13 21:12:50 IST 2018"
+                    },
+                    {
+                        "signalname": "MainProgram_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleTemp_0_path1_SP_FRD_9202097",
+                        "value": "40.0",
+                        "enddate": "Mon Aug 13 21:39:01 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleLeakResistData_0_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:23:01 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleTotalRev1_0_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:23:01 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleTotalRev2_0_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:23:01 IST 2018"
+                    },
+                    {
+                        "signalname": "MainProgram_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "ActProgram_path1_SP_FRD_9202097",
+                        "value": "//CNC_MEM/USER/PATH1/O8900",
+                        "enddate": "Mon Aug 13 21:12:31 IST 2018"
+                    },
+                    {
+                        "signalname": "SigSBK_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "OPERATE",
+                        "value": "true",
+                        "enddate": "Mon Aug 13 21:12:49 IST 2018"
+                    },
+                    {
+                        "signalname": "DISCONNECT",
+                        "value": "true",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "EMERGENCY",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "STOP",
+                        "value": "false",
+                        "enddate": "Mon Aug 13 21:12:49 IST 2018"
+                    },
+                    {
+                        "signalname": "SUSPEND",
+                        "value": "true",
+                        "enddate": "Mon Aug 13 20:02:18 IST 2018"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "5b71ab42ddb9160dc1e4b6bc",
+            "dateTime": {
+                "seconds": "1534176066",
+                "date": "2018-08-13",
+                "time": "16:01:06",
+                "day": "Mon",
+                "tz": "+0000 UTC"
+            },
+            "server": {
+                "USER": "www-data",
+                "HOME": "/var/www",
+                "HTTP_USER_AGENT": "Java/1.8.0_171",
+                "HTTP_ACCEPT_CHARSET": "big5, big5-hkscs, cesu-8, euc-jp, euc-kr, gb18030, gb2312, gbk, ibm-thai, ibm00858, ibm01140, ibm01141, ibm01142, ibm01143, ibm01144, ibm01145, ibm01146, ibm01147, ibm01148, ibm01149, ibm037, ibm1026, ibm1047, ibm273, ibm277, ibm278, ibm280, ibm284, ibm285, ibm290, ibm297, ibm420, ibm424, ibm437, ibm500, ibm775, ibm850, ibm852, ibm855, ibm857, ibm860, ibm861, ibm862, ibm863, ibm864, ibm865, ibm866, ibm868, ibm869, ibm870, ibm871, ibm918, iso-2022-cn, iso-2022-jp, iso-2022-jp-2, iso-2022-kr, iso-8859-1, iso-8859-13, iso-8859-15, iso-8859-2, iso-8859-3, iso-8859-4, iso-8859-5, iso-8859-6, iso-8859-7, iso-8859-8, iso-8859-9, jis_x0201, jis_x0212-1990, koi8-r, koi8-u, shift_jis, tis-620, us-ascii, utf-16, utf-16be, utf-16le, utf-32, utf-32be, utf-32le, utf-8, windows-1250, windows-1251, windows-1252, windows-1253, windows-1254, windows-1255, windows-1256, windows-1257, windows-1258, windows-31j, x-big5-hkscs-2001, x-big5-solaris, x-euc-jp-linux, x-euc-tw, x-eucjp-open, x-ibm1006, x-ibm1025, x-ibm1046, x-ibm1097, x-ibm1098, x-ibm1112, x-ibm1122, x-ibm1123, x-ibm1124, x-ibm1166, x-ibm1364, x-ibm1381, x-ibm1383, x-ibm300, x-ibm33722, x-ibm737, x-ibm833, x-ibm834, x-ibm856, x-ibm874, x-ibm875, x-ibm921, x-ibm922, x-ibm930, x-ibm933, x-ibm935, x-ibm937, x-ibm939, x-ibm942, x-ibm942c, x-ibm943, x-ibm943c, x-ibm948, x-ibm949, x-ibm949c, x-ibm950, x-ibm964, x-ibm970, x-iscii91, x-iso-2022-cn-cns, x-iso-2022-cn-gb, x-iso-8859-11, x-jis0208, x-jisautodetect, x-johab, x-macarabic, x-maccentraleurope, x-maccroatian, x-maccyrillic, x-macdingbat, x-macgreek, x-machebrew, x-maciceland, x-macroman, x-macromania, x-macsymbol, x-macthai, x-macturkish, x-macukraine, x-ms932_0213, x-ms950-hkscs, x-ms950-hkscs-xp, x-mswin-936, x-pck, x-sjis_0213, x-utf-16le-bom, x-utf-32be-bom, x-utf-32le-bom, x-windows-50220, x-windows-50221, x-windows-874, x-windows-949, x-windows-950, x-windows-iso2022jp",
+                "HTTP_CONTENT_TYPE": "application/json",
+                "HTTP_ACCEPT": "*/*",
+                "HTTP_CONTENT_LENGTH": "2532",
+                "HTTP_CONNECTION": "close",
+                "HTTP_HOST": "data4.iotworldlabs.io",
+                "REDIRECT_STATUS": "200",
+                "SERVER_NAME": "data4.iotworldlabs.io",
+                "SERVER_PORT": "443",
+                "SERVER_ADDR": "10.0.0.18",
+                "REMOTE_PORT": "55854",
+                "REMOTE_ADDR": "52.191.161.117",
+                "SERVER_SOFTWARE": "nginx/1.10.3",
+                "GATEWAY_INTERFACE": "CGI/1.1",
+                "HTTPS": "on",
+                "REQUEST_SCHEME": "https",
+                "SERVER_PROTOCOL": "HTTP/1.0",
+                "DOCUMENT_ROOT": "/var/www/data4.iotworldlabs.io",
+                "DOCUMENT_URI": "/DeviceId/HERO-SM-FRD-MTL.php",
+                "REQUEST_URI": "/DeviceId/HERO-SM-FRD-MTL",
+                "SCRIPT_NAME": "/DeviceId/HERO-SM-FRD-MTL.php",
+                "CONTENT_LENGTH": "2532",
+                "CONTENT_TYPE": "application/json",
+                "REQUEST_METHOD": "POST",
+                "QUERY_STRING": "",
+                "SCRIPT_FILENAME": "/var/www/data4.iotworldlabs.io/DeviceId/HERO-SM-FRD-MTL.php",
+                "PATH_INFO": "",
+                "FCGI_ROLE": "RESPONDER",
+                "PHP_SELF": "/DeviceId/HERO-SM-FRD-MTL.php",
+                "REQUEST_TIME_FLOAT": 1534176066.6614,
+                "REQUEST_TIME": 1534176066
+            },
+            "body": {
+                "DeviceId": "HERO-SM-FRD-MTL",
+                "TimeStamp": "Aug 13, 2018 9:31:03 PM",
+                "signals": [
+                    {
+                        "signalname": "AlarmSignal",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "PartsCount",
+                        "value": "59",
+                        "enddate": "Mon Aug 13 21:12:49 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleLoad_0_path1",
+                        "value": "1.0",
+                        "enddate": "Mon Aug 13 21:12:47 IST 2018"
+                    },
+                    {
+                        "signalname": "FeedRate",
+                        "value": "34414",
+                        "enddate": "Mon Aug 13 21:12:49 IST 2018"
+                    },
+                    {
+                        "signalname": "X_AXIS_BALL-SCREW_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Y_AXIS_BALL-SCREW_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Z_AXIS_BALL-SCREW_LIFE",
+                        "value": "2027",
+                        "enddate": "Mon Aug 13 19:49:45 IST 2018"
+                    },
+                    {
+                        "signalname": "X_AXIS_GUIDE-WAYS_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Y_AXIS_GUIDE-WAYS_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Z_AXIS_GUIDE-WAYS_LIFE",
+                        "value": "2027",
+                        "enddate": "Mon Aug 13 19:49:45 IST 2018"
+                    },
+                    {
+                        "signalname": "SPINDLE_BEARING_LIFE",
+                        "value": "2205",
+                        "enddate": "Mon Aug 13 19:37:06 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleSpeed",
+                        "value": "11",
+                        "enddate": "Mon Aug 13 21:12:50 IST 2018"
+                    },
+                    {
+                        "signalname": "MainProgram_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleTemp_0_path1_SP_FRD_9202097",
+                        "value": "41.0",
+                        "enddate": "Mon Aug 13 21:31:02 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleLeakResistData_0_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:23:01 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleTotalRev1_0_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:23:01 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleTotalRev2_0_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:23:01 IST 2018"
+                    },
+                    {
+                        "signalname": "MainProgram_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "ActProgram_path1_SP_FRD_9202097",
+                        "value": "//CNC_MEM/USER/PATH1/O8900",
+                        "enddate": "Mon Aug 13 21:12:31 IST 2018"
+                    },
+                    {
+                        "signalname": "SigSBK_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "OPERATE",
+                        "value": "true",
+                        "enddate": "Mon Aug 13 21:12:49 IST 2018"
+                    },
+                    {
+                        "signalname": "DISCONNECT",
+                        "value": "true",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "EMERGENCY",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "STOP",
+                        "value": "false",
+                        "enddate": "Mon Aug 13 21:12:49 IST 2018"
+                    },
+                    {
+                        "signalname": "SUSPEND",
+                        "value": "true",
+                        "enddate": "Mon Aug 13 20:02:18 IST 2018"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "5b71a99d6ec1622b13f934d4",
+            "dateTime": {
+                "seconds": "1534175645",
+                "date": "2018-08-13",
+                "time": "15:54:05",
+                "day": "Mon",
+                "tz": "+0000 UTC"
+            },
+            "server": {
+                "USER": "www-data",
+                "HOME": "/var/www",
+                "HTTP_USER_AGENT": "Java/1.8.0_171",
+                "HTTP_ACCEPT_CHARSET": "big5, big5-hkscs, cesu-8, euc-jp, euc-kr, gb18030, gb2312, gbk, ibm-thai, ibm00858, ibm01140, ibm01141, ibm01142, ibm01143, ibm01144, ibm01145, ibm01146, ibm01147, ibm01148, ibm01149, ibm037, ibm1026, ibm1047, ibm273, ibm277, ibm278, ibm280, ibm284, ibm285, ibm290, ibm297, ibm420, ibm424, ibm437, ibm500, ibm775, ibm850, ibm852, ibm855, ibm857, ibm860, ibm861, ibm862, ibm863, ibm864, ibm865, ibm866, ibm868, ibm869, ibm870, ibm871, ibm918, iso-2022-cn, iso-2022-jp, iso-2022-jp-2, iso-2022-kr, iso-8859-1, iso-8859-13, iso-8859-15, iso-8859-2, iso-8859-3, iso-8859-4, iso-8859-5, iso-8859-6, iso-8859-7, iso-8859-8, iso-8859-9, jis_x0201, jis_x0212-1990, koi8-r, koi8-u, shift_jis, tis-620, us-ascii, utf-16, utf-16be, utf-16le, utf-32, utf-32be, utf-32le, utf-8, windows-1250, windows-1251, windows-1252, windows-1253, windows-1254, windows-1255, windows-1256, windows-1257, windows-1258, windows-31j, x-big5-hkscs-2001, x-big5-solaris, x-euc-jp-linux, x-euc-tw, x-eucjp-open, x-ibm1006, x-ibm1025, x-ibm1046, x-ibm1097, x-ibm1098, x-ibm1112, x-ibm1122, x-ibm1123, x-ibm1124, x-ibm1166, x-ibm1364, x-ibm1381, x-ibm1383, x-ibm300, x-ibm33722, x-ibm737, x-ibm833, x-ibm834, x-ibm856, x-ibm874, x-ibm875, x-ibm921, x-ibm922, x-ibm930, x-ibm933, x-ibm935, x-ibm937, x-ibm939, x-ibm942, x-ibm942c, x-ibm943, x-ibm943c, x-ibm948, x-ibm949, x-ibm949c, x-ibm950, x-ibm964, x-ibm970, x-iscii91, x-iso-2022-cn-cns, x-iso-2022-cn-gb, x-iso-8859-11, x-jis0208, x-jisautodetect, x-johab, x-macarabic, x-maccentraleurope, x-maccroatian, x-maccyrillic, x-macdingbat, x-macgreek, x-machebrew, x-maciceland, x-macroman, x-macromania, x-macsymbol, x-macthai, x-macturkish, x-macukraine, x-ms932_0213, x-ms950-hkscs, x-ms950-hkscs-xp, x-mswin-936, x-pck, x-sjis_0213, x-utf-16le-bom, x-utf-32be-bom, x-utf-32le-bom, x-windows-50220, x-windows-50221, x-windows-874, x-windows-949, x-windows-950, x-windows-iso2022jp",
+                "HTTP_CONTENT_TYPE": "application/json",
+                "HTTP_ACCEPT": "*/*",
+                "HTTP_CONTENT_LENGTH": "2532",
+                "HTTP_CONNECTION": "close",
+                "HTTP_HOST": "data4.iotworldlabs.io",
+                "REDIRECT_STATUS": "200",
+                "SERVER_NAME": "data4.iotworldlabs.io",
+                "SERVER_PORT": "443",
+                "SERVER_ADDR": "10.0.0.18",
+                "REMOTE_PORT": "54726",
+                "REMOTE_ADDR": "52.191.161.117",
+                "SERVER_SOFTWARE": "nginx/1.10.3",
+                "GATEWAY_INTERFACE": "CGI/1.1",
+                "HTTPS": "on",
+                "REQUEST_SCHEME": "https",
+                "SERVER_PROTOCOL": "HTTP/1.0",
+                "DOCUMENT_ROOT": "/var/www/data4.iotworldlabs.io",
+                "DOCUMENT_URI": "/DeviceId/HERO-SM-FRD-MTL.php",
+                "REQUEST_URI": "/DeviceId/HERO-SM-FRD-MTL",
+                "SCRIPT_NAME": "/DeviceId/HERO-SM-FRD-MTL.php",
+                "CONTENT_LENGTH": "2532",
+                "CONTENT_TYPE": "application/json",
+                "REQUEST_METHOD": "POST",
+                "QUERY_STRING": "",
+                "SCRIPT_FILENAME": "/var/www/data4.iotworldlabs.io/DeviceId/HERO-SM-FRD-MTL.php",
+                "PATH_INFO": "",
+                "FCGI_ROLE": "RESPONDER",
+                "PHP_SELF": "/DeviceId/HERO-SM-FRD-MTL.php",
+                "REQUEST_TIME_FLOAT": 1534175645.7941,
+                "REQUEST_TIME": 1534175645
+            },
+            "body": {
+                "DeviceId": "HERO-SM-FRD-MTL",
+                "TimeStamp": "Aug 13, 2018 9:24:02 PM",
+                "signals": [
+                    {
+                        "signalname": "AlarmSignal",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "PartsCount",
+                        "value": "59",
+                        "enddate": "Mon Aug 13 21:12:49 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleLoad_0_path1",
+                        "value": "1.0",
+                        "enddate": "Mon Aug 13 21:12:47 IST 2018"
+                    },
+                    {
+                        "signalname": "FeedRate",
+                        "value": "34414",
+                        "enddate": "Mon Aug 13 21:12:49 IST 2018"
+                    },
+                    {
+                        "signalname": "X_AXIS_BALL-SCREW_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Y_AXIS_BALL-SCREW_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Z_AXIS_BALL-SCREW_LIFE",
+                        "value": "2027",
+                        "enddate": "Mon Aug 13 19:49:45 IST 2018"
+                    },
+                    {
+                        "signalname": "X_AXIS_GUIDE-WAYS_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Y_AXIS_GUIDE-WAYS_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Z_AXIS_GUIDE-WAYS_LIFE",
+                        "value": "2027",
+                        "enddate": "Mon Aug 13 19:49:45 IST 2018"
+                    },
+                    {
+                        "signalname": "SPINDLE_BEARING_LIFE",
+                        "value": "2205",
+                        "enddate": "Mon Aug 13 19:37:06 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleSpeed",
+                        "value": "11",
+                        "enddate": "Mon Aug 13 21:12:50 IST 2018"
+                    },
+                    {
+                        "signalname": "MainProgram_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleTemp_0_path1_SP_FRD_9202097",
+                        "value": "42.0",
+                        "enddate": "Mon Aug 13 21:24:01 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleLeakResistData_0_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:23:01 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleTotalRev1_0_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:23:01 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleTotalRev2_0_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:23:01 IST 2018"
+                    },
+                    {
+                        "signalname": "MainProgram_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "ActProgram_path1_SP_FRD_9202097",
+                        "value": "//CNC_MEM/USER/PATH1/O8900",
+                        "enddate": "Mon Aug 13 21:12:31 IST 2018"
+                    },
+                    {
+                        "signalname": "SigSBK_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "OPERATE",
+                        "value": "true",
+                        "enddate": "Mon Aug 13 21:12:49 IST 2018"
+                    },
+                    {
+                        "signalname": "DISCONNECT",
+                        "value": "true",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "EMERGENCY",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "STOP",
+                        "value": "false",
+                        "enddate": "Mon Aug 13 21:12:49 IST 2018"
+                    },
+                    {
+                        "signalname": "SUSPEND",
+                        "value": "true",
+                        "enddate": "Mon Aug 13 20:02:18 IST 2018"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "5b71a871bd0b6bacc1602279",
+            "dateTime": {
+                "seconds": "1534175345",
+                "date": "2018-08-13",
+                "time": "15:49:05",
+                "day": "Mon",
+                "tz": "+0000 UTC"
+            },
+            "server": {
+                "USER": "www-data",
+                "HOME": "/var/www",
+                "HTTP_USER_AGENT": "Java/1.8.0_171",
+                "HTTP_ACCEPT_CHARSET": "big5, big5-hkscs, cesu-8, euc-jp, euc-kr, gb18030, gb2312, gbk, ibm-thai, ibm00858, ibm01140, ibm01141, ibm01142, ibm01143, ibm01144, ibm01145, ibm01146, ibm01147, ibm01148, ibm01149, ibm037, ibm1026, ibm1047, ibm273, ibm277, ibm278, ibm280, ibm284, ibm285, ibm290, ibm297, ibm420, ibm424, ibm437, ibm500, ibm775, ibm850, ibm852, ibm855, ibm857, ibm860, ibm861, ibm862, ibm863, ibm864, ibm865, ibm866, ibm868, ibm869, ibm870, ibm871, ibm918, iso-2022-cn, iso-2022-jp, iso-2022-jp-2, iso-2022-kr, iso-8859-1, iso-8859-13, iso-8859-15, iso-8859-2, iso-8859-3, iso-8859-4, iso-8859-5, iso-8859-6, iso-8859-7, iso-8859-8, iso-8859-9, jis_x0201, jis_x0212-1990, koi8-r, koi8-u, shift_jis, tis-620, us-ascii, utf-16, utf-16be, utf-16le, utf-32, utf-32be, utf-32le, utf-8, windows-1250, windows-1251, windows-1252, windows-1253, windows-1254, windows-1255, windows-1256, windows-1257, windows-1258, windows-31j, x-big5-hkscs-2001, x-big5-solaris, x-euc-jp-linux, x-euc-tw, x-eucjp-open, x-ibm1006, x-ibm1025, x-ibm1046, x-ibm1097, x-ibm1098, x-ibm1112, x-ibm1122, x-ibm1123, x-ibm1124, x-ibm1166, x-ibm1364, x-ibm1381, x-ibm1383, x-ibm300, x-ibm33722, x-ibm737, x-ibm833, x-ibm834, x-ibm856, x-ibm874, x-ibm875, x-ibm921, x-ibm922, x-ibm930, x-ibm933, x-ibm935, x-ibm937, x-ibm939, x-ibm942, x-ibm942c, x-ibm943, x-ibm943c, x-ibm948, x-ibm949, x-ibm949c, x-ibm950, x-ibm964, x-ibm970, x-iscii91, x-iso-2022-cn-cns, x-iso-2022-cn-gb, x-iso-8859-11, x-jis0208, x-jisautodetect, x-johab, x-macarabic, x-maccentraleurope, x-maccroatian, x-maccyrillic, x-macdingbat, x-macgreek, x-machebrew, x-maciceland, x-macroman, x-macromania, x-macsymbol, x-macthai, x-macturkish, x-macukraine, x-ms932_0213, x-ms950-hkscs, x-ms950-hkscs-xp, x-mswin-936, x-pck, x-sjis_0213, x-utf-16le-bom, x-utf-32be-bom, x-utf-32le-bom, x-windows-50220, x-windows-50221, x-windows-874, x-windows-949, x-windows-950, x-windows-iso2022jp",
+                "HTTP_CONTENT_TYPE": "application/json",
+                "HTTP_ACCEPT": "*/*",
+                "HTTP_CONTENT_LENGTH": "2532",
+                "HTTP_CONNECTION": "close",
+                "HTTP_HOST": "data4.iotworldlabs.io",
+                "REDIRECT_STATUS": "200",
+                "SERVER_NAME": "data4.iotworldlabs.io",
+                "SERVER_PORT": "443",
+                "SERVER_ADDR": "10.0.0.18",
+                "REMOTE_PORT": "53920",
+                "REMOTE_ADDR": "52.191.161.117",
+                "SERVER_SOFTWARE": "nginx/1.10.3",
+                "GATEWAY_INTERFACE": "CGI/1.1",
+                "HTTPS": "on",
+                "REQUEST_SCHEME": "https",
+                "SERVER_PROTOCOL": "HTTP/1.0",
+                "DOCUMENT_ROOT": "/var/www/data4.iotworldlabs.io",
+                "DOCUMENT_URI": "/DeviceId/HERO-SM-FRD-MTL.php",
+                "REQUEST_URI": "/DeviceId/HERO-SM-FRD-MTL",
+                "SCRIPT_NAME": "/DeviceId/HERO-SM-FRD-MTL.php",
+                "CONTENT_LENGTH": "2532",
+                "CONTENT_TYPE": "application/json",
+                "REQUEST_METHOD": "POST",
+                "QUERY_STRING": "",
+                "SCRIPT_FILENAME": "/var/www/data4.iotworldlabs.io/DeviceId/HERO-SM-FRD-MTL.php",
+                "PATH_INFO": "",
+                "FCGI_ROLE": "RESPONDER",
+                "PHP_SELF": "/DeviceId/HERO-SM-FRD-MTL.php",
+                "REQUEST_TIME_FLOAT": 1534175345.8558,
+                "REQUEST_TIME": 1534175345
+            },
+            "body": {
+                "DeviceId": "HERO-SM-FRD-MTL",
+                "TimeStamp": "Aug 13, 2018 9:19:02 PM",
+                "signals": [
+                    {
+                        "signalname": "AlarmSignal",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "PartsCount",
+                        "value": "59",
+                        "enddate": "Mon Aug 13 21:12:49 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleLoad_0_path1",
+                        "value": "1.0",
+                        "enddate": "Mon Aug 13 21:12:47 IST 2018"
+                    },
+                    {
+                        "signalname": "FeedRate",
+                        "value": "34414",
+                        "enddate": "Mon Aug 13 21:12:49 IST 2018"
+                    },
+                    {
+                        "signalname": "X_AXIS_BALL-SCREW_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Y_AXIS_BALL-SCREW_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Z_AXIS_BALL-SCREW_LIFE",
+                        "value": "2027",
+                        "enddate": "Mon Aug 13 19:49:45 IST 2018"
+                    },
+                    {
+                        "signalname": "X_AXIS_GUIDE-WAYS_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Y_AXIS_GUIDE-WAYS_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Z_AXIS_GUIDE-WAYS_LIFE",
+                        "value": "2027",
+                        "enddate": "Mon Aug 13 19:49:45 IST 2018"
+                    },
+                    {
+                        "signalname": "SPINDLE_BEARING_LIFE",
+                        "value": "2205",
+                        "enddate": "Mon Aug 13 19:37:06 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleSpeed",
+                        "value": "11",
+                        "enddate": "Mon Aug 13 21:12:50 IST 2018"
+                    },
+                    {
+                        "signalname": "MainProgram_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleTemp_0_path1_SP_FRD_9202097",
+                        "value": "43.0",
+                        "enddate": "Mon Aug 13 21:19:01 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleLeakResistData_0_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:23:01 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleTotalRev1_0_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:23:01 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleTotalRev2_0_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:23:01 IST 2018"
+                    },
+                    {
+                        "signalname": "MainProgram_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "ActProgram_path1_SP_FRD_9202097",
+                        "value": "//CNC_MEM/USER/PATH1/O8900",
+                        "enddate": "Mon Aug 13 21:12:31 IST 2018"
+                    },
+                    {
+                        "signalname": "SigSBK_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "OPERATE",
+                        "value": "true",
+                        "enddate": "Mon Aug 13 21:12:49 IST 2018"
+                    },
+                    {
+                        "signalname": "DISCONNECT",
+                        "value": "true",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "EMERGENCY",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "STOP",
+                        "value": "false",
+                        "enddate": "Mon Aug 13 21:12:49 IST 2018"
+                    },
+                    {
+                        "signalname": "SUSPEND",
+                        "value": "true",
+                        "enddate": "Mon Aug 13 20:02:18 IST 2018"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "5b71a7be1cea75f7580e57a1",
+            "dateTime": {
+                "seconds": "1534175166",
+                "date": "2018-08-13",
+                "time": "15:46:06",
+                "day": "Mon",
+                "tz": "+0000 UTC"
+            },
+            "server": {
+                "USER": "www-data",
+                "HOME": "/var/www",
+                "HTTP_USER_AGENT": "Java/1.8.0_171",
+                "HTTP_ACCEPT_CHARSET": "big5, big5-hkscs, cesu-8, euc-jp, euc-kr, gb18030, gb2312, gbk, ibm-thai, ibm00858, ibm01140, ibm01141, ibm01142, ibm01143, ibm01144, ibm01145, ibm01146, ibm01147, ibm01148, ibm01149, ibm037, ibm1026, ibm1047, ibm273, ibm277, ibm278, ibm280, ibm284, ibm285, ibm290, ibm297, ibm420, ibm424, ibm437, ibm500, ibm775, ibm850, ibm852, ibm855, ibm857, ibm860, ibm861, ibm862, ibm863, ibm864, ibm865, ibm866, ibm868, ibm869, ibm870, ibm871, ibm918, iso-2022-cn, iso-2022-jp, iso-2022-jp-2, iso-2022-kr, iso-8859-1, iso-8859-13, iso-8859-15, iso-8859-2, iso-8859-3, iso-8859-4, iso-8859-5, iso-8859-6, iso-8859-7, iso-8859-8, iso-8859-9, jis_x0201, jis_x0212-1990, koi8-r, koi8-u, shift_jis, tis-620, us-ascii, utf-16, utf-16be, utf-16le, utf-32, utf-32be, utf-32le, utf-8, windows-1250, windows-1251, windows-1252, windows-1253, windows-1254, windows-1255, windows-1256, windows-1257, windows-1258, windows-31j, x-big5-hkscs-2001, x-big5-solaris, x-euc-jp-linux, x-euc-tw, x-eucjp-open, x-ibm1006, x-ibm1025, x-ibm1046, x-ibm1097, x-ibm1098, x-ibm1112, x-ibm1122, x-ibm1123, x-ibm1124, x-ibm1166, x-ibm1364, x-ibm1381, x-ibm1383, x-ibm300, x-ibm33722, x-ibm737, x-ibm833, x-ibm834, x-ibm856, x-ibm874, x-ibm875, x-ibm921, x-ibm922, x-ibm930, x-ibm933, x-ibm935, x-ibm937, x-ibm939, x-ibm942, x-ibm942c, x-ibm943, x-ibm943c, x-ibm948, x-ibm949, x-ibm949c, x-ibm950, x-ibm964, x-ibm970, x-iscii91, x-iso-2022-cn-cns, x-iso-2022-cn-gb, x-iso-8859-11, x-jis0208, x-jisautodetect, x-johab, x-macarabic, x-maccentraleurope, x-maccroatian, x-maccyrillic, x-macdingbat, x-macgreek, x-machebrew, x-maciceland, x-macroman, x-macromania, x-macsymbol, x-macthai, x-macturkish, x-macukraine, x-ms932_0213, x-ms950-hkscs, x-ms950-hkscs-xp, x-mswin-936, x-pck, x-sjis_0213, x-utf-16le-bom, x-utf-32be-bom, x-utf-32le-bom, x-windows-50220, x-windows-50221, x-windows-874, x-windows-949, x-windows-950, x-windows-iso2022jp",
+                "HTTP_CONTENT_TYPE": "application/json",
+                "HTTP_ACCEPT": "*/*",
+                "HTTP_CONTENT_LENGTH": "2532",
+                "HTTP_CONNECTION": "close",
+                "HTTP_HOST": "data4.iotworldlabs.io",
+                "REDIRECT_STATUS": "200",
+                "SERVER_NAME": "data4.iotworldlabs.io",
+                "SERVER_PORT": "443",
+                "SERVER_ADDR": "10.0.0.18",
+                "REMOTE_PORT": "53442",
+                "REMOTE_ADDR": "52.191.161.117",
+                "SERVER_SOFTWARE": "nginx/1.10.3",
+                "GATEWAY_INTERFACE": "CGI/1.1",
+                "HTTPS": "on",
+                "REQUEST_SCHEME": "https",
+                "SERVER_PROTOCOL": "HTTP/1.0",
+                "DOCUMENT_ROOT": "/var/www/data4.iotworldlabs.io",
+                "DOCUMENT_URI": "/DeviceId/HERO-SM-FRD-MTL.php",
+                "REQUEST_URI": "/DeviceId/HERO-SM-FRD-MTL",
+                "SCRIPT_NAME": "/DeviceId/HERO-SM-FRD-MTL.php",
+                "CONTENT_LENGTH": "2532",
+                "CONTENT_TYPE": "application/json",
+                "REQUEST_METHOD": "POST",
+                "QUERY_STRING": "",
+                "SCRIPT_FILENAME": "/var/www/data4.iotworldlabs.io/DeviceId/HERO-SM-FRD-MTL.php",
+                "PATH_INFO": "",
+                "FCGI_ROLE": "RESPONDER",
+                "PHP_SELF": "/DeviceId/HERO-SM-FRD-MTL.php",
+                "REQUEST_TIME_FLOAT": 1534175166.4499,
+                "REQUEST_TIME": 1534175166
+            },
+            "body": {
+                "DeviceId": "HERO-SM-FRD-MTL",
+                "TimeStamp": "Aug 13, 2018 9:16:03 PM",
+                "signals": [
+                    {
+                        "signalname": "AlarmSignal",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "PartsCount",
+                        "value": "59",
+                        "enddate": "Mon Aug 13 21:12:49 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleLoad_0_path1",
+                        "value": "1.0",
+                        "enddate": "Mon Aug 13 21:12:47 IST 2018"
+                    },
+                    {
+                        "signalname": "FeedRate",
+                        "value": "34414",
+                        "enddate": "Mon Aug 13 21:12:49 IST 2018"
+                    },
+                    {
+                        "signalname": "X_AXIS_BALL-SCREW_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Y_AXIS_BALL-SCREW_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Z_AXIS_BALL-SCREW_LIFE",
+                        "value": "2027",
+                        "enddate": "Mon Aug 13 19:49:45 IST 2018"
+                    },
+                    {
+                        "signalname": "X_AXIS_GUIDE-WAYS_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Y_AXIS_GUIDE-WAYS_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Z_AXIS_GUIDE-WAYS_LIFE",
+                        "value": "2027",
+                        "enddate": "Mon Aug 13 19:49:45 IST 2018"
+                    },
+                    {
+                        "signalname": "SPINDLE_BEARING_LIFE",
+                        "value": "2205",
+                        "enddate": "Mon Aug 13 19:37:06 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleSpeed",
+                        "value": "11",
+                        "enddate": "Mon Aug 13 21:12:50 IST 2018"
+                    },
+                    {
+                        "signalname": "MainProgram_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleTemp_0_path1_SP_FRD_9202097",
+                        "value": "44.0",
+                        "enddate": "Mon Aug 13 21:16:02 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleLeakResistData_0_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:23:01 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleTotalRev1_0_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:23:01 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleTotalRev2_0_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:23:01 IST 2018"
+                    },
+                    {
+                        "signalname": "MainProgram_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "ActProgram_path1_SP_FRD_9202097",
+                        "value": "//CNC_MEM/USER/PATH1/O8900",
+                        "enddate": "Mon Aug 13 21:12:31 IST 2018"
+                    },
+                    {
+                        "signalname": "SigSBK_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "OPERATE",
+                        "value": "true",
+                        "enddate": "Mon Aug 13 21:12:49 IST 2018"
+                    },
+                    {
+                        "signalname": "DISCONNECT",
+                        "value": "true",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "EMERGENCY",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "STOP",
+                        "value": "false",
+                        "enddate": "Mon Aug 13 21:12:49 IST 2018"
+                    },
+                    {
+                        "signalname": "SUSPEND",
+                        "value": "true",
+                        "enddate": "Mon Aug 13 20:02:18 IST 2018"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "5b71a6fd0bbd7fef9cf9798f",
+            "dateTime": {
+                "seconds": "1534174973",
+                "date": "2018-08-13",
+                "time": "15:42:53",
+                "day": "Mon",
+                "tz": "+0000 UTC"
+            },
+            "server": {
+                "USER": "www-data",
+                "HOME": "/var/www",
+                "HTTP_USER_AGENT": "Java/1.8.0_171",
+                "HTTP_ACCEPT_CHARSET": "big5, big5-hkscs, cesu-8, euc-jp, euc-kr, gb18030, gb2312, gbk, ibm-thai, ibm00858, ibm01140, ibm01141, ibm01142, ibm01143, ibm01144, ibm01145, ibm01146, ibm01147, ibm01148, ibm01149, ibm037, ibm1026, ibm1047, ibm273, ibm277, ibm278, ibm280, ibm284, ibm285, ibm290, ibm297, ibm420, ibm424, ibm437, ibm500, ibm775, ibm850, ibm852, ibm855, ibm857, ibm860, ibm861, ibm862, ibm863, ibm864, ibm865, ibm866, ibm868, ibm869, ibm870, ibm871, ibm918, iso-2022-cn, iso-2022-jp, iso-2022-jp-2, iso-2022-kr, iso-8859-1, iso-8859-13, iso-8859-15, iso-8859-2, iso-8859-3, iso-8859-4, iso-8859-5, iso-8859-6, iso-8859-7, iso-8859-8, iso-8859-9, jis_x0201, jis_x0212-1990, koi8-r, koi8-u, shift_jis, tis-620, us-ascii, utf-16, utf-16be, utf-16le, utf-32, utf-32be, utf-32le, utf-8, windows-1250, windows-1251, windows-1252, windows-1253, windows-1254, windows-1255, windows-1256, windows-1257, windows-1258, windows-31j, x-big5-hkscs-2001, x-big5-solaris, x-euc-jp-linux, x-euc-tw, x-eucjp-open, x-ibm1006, x-ibm1025, x-ibm1046, x-ibm1097, x-ibm1098, x-ibm1112, x-ibm1122, x-ibm1123, x-ibm1124, x-ibm1166, x-ibm1364, x-ibm1381, x-ibm1383, x-ibm300, x-ibm33722, x-ibm737, x-ibm833, x-ibm834, x-ibm856, x-ibm874, x-ibm875, x-ibm921, x-ibm922, x-ibm930, x-ibm933, x-ibm935, x-ibm937, x-ibm939, x-ibm942, x-ibm942c, x-ibm943, x-ibm943c, x-ibm948, x-ibm949, x-ibm949c, x-ibm950, x-ibm964, x-ibm970, x-iscii91, x-iso-2022-cn-cns, x-iso-2022-cn-gb, x-iso-8859-11, x-jis0208, x-jisautodetect, x-johab, x-macarabic, x-maccentraleurope, x-maccroatian, x-maccyrillic, x-macdingbat, x-macgreek, x-machebrew, x-maciceland, x-macroman, x-macromania, x-macsymbol, x-macthai, x-macturkish, x-macukraine, x-ms932_0213, x-ms950-hkscs, x-ms950-hkscs-xp, x-mswin-936, x-pck, x-sjis_0213, x-utf-16le-bom, x-utf-32be-bom, x-utf-32le-bom, x-windows-50220, x-windows-50221, x-windows-874, x-windows-949, x-windows-950, x-windows-iso2022jp",
+                "HTTP_CONTENT_TYPE": "application/json",
+                "HTTP_ACCEPT": "*/*",
+                "HTTP_CONTENT_LENGTH": "2532",
+                "HTTP_CONNECTION": "close",
+                "HTTP_HOST": "data4.iotworldlabs.io",
+                "REDIRECT_STATUS": "200",
+                "SERVER_NAME": "data4.iotworldlabs.io",
+                "SERVER_PORT": "443",
+                "SERVER_ADDR": "10.0.0.18",
+                "REMOTE_PORT": "52928",
+                "REMOTE_ADDR": "52.191.161.117",
+                "SERVER_SOFTWARE": "nginx/1.10.3",
+                "GATEWAY_INTERFACE": "CGI/1.1",
+                "HTTPS": "on",
+                "REQUEST_SCHEME": "https",
+                "SERVER_PROTOCOL": "HTTP/1.0",
+                "DOCUMENT_ROOT": "/var/www/data4.iotworldlabs.io",
+                "DOCUMENT_URI": "/DeviceId/HERO-SM-FRD-MTL.php",
+                "REQUEST_URI": "/DeviceId/HERO-SM-FRD-MTL",
+                "SCRIPT_NAME": "/DeviceId/HERO-SM-FRD-MTL.php",
+                "CONTENT_LENGTH": "2532",
+                "CONTENT_TYPE": "application/json",
+                "REQUEST_METHOD": "POST",
+                "QUERY_STRING": "",
+                "SCRIPT_FILENAME": "/var/www/data4.iotworldlabs.io/DeviceId/HERO-SM-FRD-MTL.php",
+                "PATH_INFO": "",
+                "FCGI_ROLE": "RESPONDER",
+                "PHP_SELF": "/DeviceId/HERO-SM-FRD-MTL.php",
+                "REQUEST_TIME_FLOAT": 1534174973.6576,
+                "REQUEST_TIME": 1534174973
+            },
+            "body": {
+                "DeviceId": "HERO-SM-FRD-MTL",
+                "TimeStamp": "Aug 13, 2018 9:12:51 PM",
+                "signals": [
+                    {
+                        "signalname": "AlarmSignal",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "PartsCount",
+                        "value": "59",
+                        "enddate": "Mon Aug 13 21:12:49 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleLoad_0_path1",
+                        "value": "1.0",
+                        "enddate": "Mon Aug 13 21:12:47 IST 2018"
+                    },
+                    {
+                        "signalname": "FeedRate",
+                        "value": "34414",
+                        "enddate": "Mon Aug 13 21:12:49 IST 2018"
+                    },
+                    {
+                        "signalname": "X_AXIS_BALL-SCREW_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Y_AXIS_BALL-SCREW_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Z_AXIS_BALL-SCREW_LIFE",
+                        "value": "2027",
+                        "enddate": "Mon Aug 13 19:49:45 IST 2018"
+                    },
+                    {
+                        "signalname": "X_AXIS_GUIDE-WAYS_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Y_AXIS_GUIDE-WAYS_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Z_AXIS_GUIDE-WAYS_LIFE",
+                        "value": "2027",
+                        "enddate": "Mon Aug 13 19:49:45 IST 2018"
+                    },
+                    {
+                        "signalname": "SPINDLE_BEARING_LIFE",
+                        "value": "2205",
+                        "enddate": "Mon Aug 13 19:37:06 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleSpeed",
+                        "value": "11",
+                        "enddate": "Mon Aug 13 21:12:50 IST 2018"
+                    },
+                    {
+                        "signalname": "MainProgram_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleTemp_0_path1_SP_FRD_9202097",
+                        "value": "43.0",
+                        "enddate": "Mon Aug 13 21:12:02 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleLeakResistData_0_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:23:01 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleTotalRev1_0_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:23:01 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleTotalRev2_0_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:23:01 IST 2018"
+                    },
+                    {
+                        "signalname": "MainProgram_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "ActProgram_path1_SP_FRD_9202097",
+                        "value": "//CNC_MEM/USER/PATH1/O8900",
+                        "enddate": "Mon Aug 13 21:12:31 IST 2018"
+                    },
+                    {
+                        "signalname": "SigSBK_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "OPERATE",
+                        "value": "true",
+                        "enddate": "Mon Aug 13 21:12:49 IST 2018"
+                    },
+                    {
+                        "signalname": "DISCONNECT",
+                        "value": "true",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "EMERGENCY",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "STOP",
+                        "value": "false",
+                        "enddate": "Mon Aug 13 21:12:49 IST 2018"
+                    },
+                    {
+                        "signalname": "SUSPEND",
+                        "value": "true",
+                        "enddate": "Mon Aug 13 20:02:18 IST 2018"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "5b71a6fb3383ad47ce0f7882",
+            "dateTime": {
+                "seconds": "1534174971",
+                "date": "2018-08-13",
+                "time": "15:42:51",
+                "day": "Mon",
+                "tz": "+0000 UTC"
+            },
+            "server": {
+                "USER": "www-data",
+                "HOME": "/var/www",
+                "HTTP_USER_AGENT": "Java/1.8.0_171",
+                "HTTP_ACCEPT_CHARSET": "big5, big5-hkscs, cesu-8, euc-jp, euc-kr, gb18030, gb2312, gbk, ibm-thai, ibm00858, ibm01140, ibm01141, ibm01142, ibm01143, ibm01144, ibm01145, ibm01146, ibm01147, ibm01148, ibm01149, ibm037, ibm1026, ibm1047, ibm273, ibm277, ibm278, ibm280, ibm284, ibm285, ibm290, ibm297, ibm420, ibm424, ibm437, ibm500, ibm775, ibm850, ibm852, ibm855, ibm857, ibm860, ibm861, ibm862, ibm863, ibm864, ibm865, ibm866, ibm868, ibm869, ibm870, ibm871, ibm918, iso-2022-cn, iso-2022-jp, iso-2022-jp-2, iso-2022-kr, iso-8859-1, iso-8859-13, iso-8859-15, iso-8859-2, iso-8859-3, iso-8859-4, iso-8859-5, iso-8859-6, iso-8859-7, iso-8859-8, iso-8859-9, jis_x0201, jis_x0212-1990, koi8-r, koi8-u, shift_jis, tis-620, us-ascii, utf-16, utf-16be, utf-16le, utf-32, utf-32be, utf-32le, utf-8, windows-1250, windows-1251, windows-1252, windows-1253, windows-1254, windows-1255, windows-1256, windows-1257, windows-1258, windows-31j, x-big5-hkscs-2001, x-big5-solaris, x-euc-jp-linux, x-euc-tw, x-eucjp-open, x-ibm1006, x-ibm1025, x-ibm1046, x-ibm1097, x-ibm1098, x-ibm1112, x-ibm1122, x-ibm1123, x-ibm1124, x-ibm1166, x-ibm1364, x-ibm1381, x-ibm1383, x-ibm300, x-ibm33722, x-ibm737, x-ibm833, x-ibm834, x-ibm856, x-ibm874, x-ibm875, x-ibm921, x-ibm922, x-ibm930, x-ibm933, x-ibm935, x-ibm937, x-ibm939, x-ibm942, x-ibm942c, x-ibm943, x-ibm943c, x-ibm948, x-ibm949, x-ibm949c, x-ibm950, x-ibm964, x-ibm970, x-iscii91, x-iso-2022-cn-cns, x-iso-2022-cn-gb, x-iso-8859-11, x-jis0208, x-jisautodetect, x-johab, x-macarabic, x-maccentraleurope, x-maccroatian, x-maccyrillic, x-macdingbat, x-macgreek, x-machebrew, x-maciceland, x-macroman, x-macromania, x-macsymbol, x-macthai, x-macturkish, x-macukraine, x-ms932_0213, x-ms950-hkscs, x-ms950-hkscs-xp, x-mswin-936, x-pck, x-sjis_0213, x-utf-16le-bom, x-utf-32be-bom, x-utf-32le-bom, x-windows-50220, x-windows-50221, x-windows-874, x-windows-949, x-windows-950, x-windows-iso2022jp",
+                "HTTP_CONTENT_TYPE": "application/json",
+                "HTTP_ACCEPT": "*/*",
+                "HTTP_CONTENT_LENGTH": "2533",
+                "HTTP_CONNECTION": "close",
+                "HTTP_HOST": "data4.iotworldlabs.io",
+                "REDIRECT_STATUS": "200",
+                "SERVER_NAME": "data4.iotworldlabs.io",
+                "SERVER_PORT": "443",
+                "SERVER_ADDR": "10.0.0.18",
+                "REMOTE_PORT": "52918",
+                "REMOTE_ADDR": "52.191.161.117",
+                "SERVER_SOFTWARE": "nginx/1.10.3",
+                "GATEWAY_INTERFACE": "CGI/1.1",
+                "HTTPS": "on",
+                "REQUEST_SCHEME": "https",
+                "SERVER_PROTOCOL": "HTTP/1.0",
+                "DOCUMENT_ROOT": "/var/www/data4.iotworldlabs.io",
+                "DOCUMENT_URI": "/DeviceId/HERO-SM-FRD-MTL.php",
+                "REQUEST_URI": "/DeviceId/HERO-SM-FRD-MTL",
+                "SCRIPT_NAME": "/DeviceId/HERO-SM-FRD-MTL.php",
+                "CONTENT_LENGTH": "2533",
+                "CONTENT_TYPE": "application/json",
+                "REQUEST_METHOD": "POST",
+                "QUERY_STRING": "",
+                "SCRIPT_FILENAME": "/var/www/data4.iotworldlabs.io/DeviceId/HERO-SM-FRD-MTL.php",
+                "PATH_INFO": "",
+                "FCGI_ROLE": "RESPONDER",
+                "PHP_SELF": "/DeviceId/HERO-SM-FRD-MTL.php",
+                "REQUEST_TIME_FLOAT": 1534174971.3143,
+                "REQUEST_TIME": 1534174971
+            },
+            "body": {
+                "DeviceId": "HERO-SM-FRD-MTL",
+                "TimeStamp": "Aug 13, 2018 9:12:49 PM",
+                "signals": [
+                    {
+                        "signalname": "AlarmSignal",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "PartsCount",
+                        "value": "58",
+                        "enddate": "Mon Aug 13 21:07:26 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleLoad_0_path1",
+                        "value": "1.0",
+                        "enddate": "Mon Aug 13 21:12:47 IST 2018"
+                    },
+                    {
+                        "signalname": "FeedRate",
+                        "value": "13286",
+                        "enddate": "Mon Aug 13 21:12:47 IST 2018"
+                    },
+                    {
+                        "signalname": "X_AXIS_BALL-SCREW_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Y_AXIS_BALL-SCREW_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Z_AXIS_BALL-SCREW_LIFE",
+                        "value": "2027",
+                        "enddate": "Mon Aug 13 19:49:45 IST 2018"
+                    },
+                    {
+                        "signalname": "X_AXIS_GUIDE-WAYS_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Y_AXIS_GUIDE-WAYS_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Z_AXIS_GUIDE-WAYS_LIFE",
+                        "value": "2027",
+                        "enddate": "Mon Aug 13 19:49:45 IST 2018"
+                    },
+                    {
+                        "signalname": "SPINDLE_BEARING_LIFE",
+                        "value": "2205",
+                        "enddate": "Mon Aug 13 19:37:06 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleSpeed",
+                        "value": "461",
+                        "enddate": "Mon Aug 13 21:12:42 IST 2018"
+                    },
+                    {
+                        "signalname": "MainProgram_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleTemp_0_path1_SP_FRD_9202097",
+                        "value": "43.0",
+                        "enddate": "Mon Aug 13 21:12:02 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleLeakResistData_0_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:23:01 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleTotalRev1_0_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:23:01 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleTotalRev2_0_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:23:01 IST 2018"
+                    },
+                    {
+                        "signalname": "MainProgram_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "ActProgram_path1_SP_FRD_9202097",
+                        "value": "//CNC_MEM/USER/PATH1/O8900",
+                        "enddate": "Mon Aug 13 21:12:31 IST 2018"
+                    },
+                    {
+                        "signalname": "SigSBK_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "OPERATE",
+                        "value": "false",
+                        "enddate": "Mon Aug 13 21:07:54 IST 2018"
+                    },
+                    {
+                        "signalname": "DISCONNECT",
+                        "value": "true",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "EMERGENCY",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "STOP",
+                        "value": "true",
+                        "enddate": "Mon Aug 13 21:07:54 IST 2018"
+                    },
+                    {
+                        "signalname": "SUSPEND",
+                        "value": "true",
+                        "enddate": "Mon Aug 13 20:02:18 IST 2018"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "5b71a6f9c8c739edbefb602c",
+            "dateTime": {
+                "seconds": "1534174969",
+                "date": "2018-08-13",
+                "time": "15:42:49",
+                "day": "Mon",
+                "tz": "+0000 UTC"
+            },
+            "server": {
+                "USER": "www-data",
+                "HOME": "/var/www",
+                "HTTP_USER_AGENT": "Java/1.8.0_171",
+                "HTTP_ACCEPT_CHARSET": "big5, big5-hkscs, cesu-8, euc-jp, euc-kr, gb18030, gb2312, gbk, ibm-thai, ibm00858, ibm01140, ibm01141, ibm01142, ibm01143, ibm01144, ibm01145, ibm01146, ibm01147, ibm01148, ibm01149, ibm037, ibm1026, ibm1047, ibm273, ibm277, ibm278, ibm280, ibm284, ibm285, ibm290, ibm297, ibm420, ibm424, ibm437, ibm500, ibm775, ibm850, ibm852, ibm855, ibm857, ibm860, ibm861, ibm862, ibm863, ibm864, ibm865, ibm866, ibm868, ibm869, ibm870, ibm871, ibm918, iso-2022-cn, iso-2022-jp, iso-2022-jp-2, iso-2022-kr, iso-8859-1, iso-8859-13, iso-8859-15, iso-8859-2, iso-8859-3, iso-8859-4, iso-8859-5, iso-8859-6, iso-8859-7, iso-8859-8, iso-8859-9, jis_x0201, jis_x0212-1990, koi8-r, koi8-u, shift_jis, tis-620, us-ascii, utf-16, utf-16be, utf-16le, utf-32, utf-32be, utf-32le, utf-8, windows-1250, windows-1251, windows-1252, windows-1253, windows-1254, windows-1255, windows-1256, windows-1257, windows-1258, windows-31j, x-big5-hkscs-2001, x-big5-solaris, x-euc-jp-linux, x-euc-tw, x-eucjp-open, x-ibm1006, x-ibm1025, x-ibm1046, x-ibm1097, x-ibm1098, x-ibm1112, x-ibm1122, x-ibm1123, x-ibm1124, x-ibm1166, x-ibm1364, x-ibm1381, x-ibm1383, x-ibm300, x-ibm33722, x-ibm737, x-ibm833, x-ibm834, x-ibm856, x-ibm874, x-ibm875, x-ibm921, x-ibm922, x-ibm930, x-ibm933, x-ibm935, x-ibm937, x-ibm939, x-ibm942, x-ibm942c, x-ibm943, x-ibm943c, x-ibm948, x-ibm949, x-ibm949c, x-ibm950, x-ibm964, x-ibm970, x-iscii91, x-iso-2022-cn-cns, x-iso-2022-cn-gb, x-iso-8859-11, x-jis0208, x-jisautodetect, x-johab, x-macarabic, x-maccentraleurope, x-maccroatian, x-maccyrillic, x-macdingbat, x-macgreek, x-machebrew, x-maciceland, x-macroman, x-macromania, x-macsymbol, x-macthai, x-macturkish, x-macukraine, x-ms932_0213, x-ms950-hkscs, x-ms950-hkscs-xp, x-mswin-936, x-pck, x-sjis_0213, x-utf-16le-bom, x-utf-32be-bom, x-utf-32le-bom, x-windows-50220, x-windows-50221, x-windows-874, x-windows-949, x-windows-950, x-windows-iso2022jp",
+                "HTTP_CONTENT_TYPE": "application/json",
+                "HTTP_ACCEPT": "*/*",
+                "HTTP_CONTENT_LENGTH": "2533",
+                "HTTP_CONNECTION": "close",
+                "HTTP_HOST": "data4.iotworldlabs.io",
+                "REDIRECT_STATUS": "200",
+                "SERVER_NAME": "data4.iotworldlabs.io",
+                "SERVER_PORT": "443",
+                "SERVER_ADDR": "10.0.0.18",
+                "REMOTE_PORT": "52908",
+                "REMOTE_ADDR": "52.191.161.117",
+                "SERVER_SOFTWARE": "nginx/1.10.3",
+                "GATEWAY_INTERFACE": "CGI/1.1",
+                "HTTPS": "on",
+                "REQUEST_SCHEME": "https",
+                "SERVER_PROTOCOL": "HTTP/1.0",
+                "DOCUMENT_ROOT": "/var/www/data4.iotworldlabs.io",
+                "DOCUMENT_URI": "/DeviceId/HERO-SM-FRD-MTL.php",
+                "REQUEST_URI": "/DeviceId/HERO-SM-FRD-MTL",
+                "SCRIPT_NAME": "/DeviceId/HERO-SM-FRD-MTL.php",
+                "CONTENT_LENGTH": "2533",
+                "CONTENT_TYPE": "application/json",
+                "REQUEST_METHOD": "POST",
+                "QUERY_STRING": "",
+                "SCRIPT_FILENAME": "/var/www/data4.iotworldlabs.io/DeviceId/HERO-SM-FRD-MTL.php",
+                "PATH_INFO": "",
+                "FCGI_ROLE": "RESPONDER",
+                "PHP_SELF": "/DeviceId/HERO-SM-FRD-MTL.php",
+                "REQUEST_TIME_FLOAT": 1534174969.1036,
+                "REQUEST_TIME": 1534174969
+            },
+            "body": {
+                "DeviceId": "HERO-SM-FRD-MTL",
+                "TimeStamp": "Aug 13, 2018 9:12:46 PM",
+                "signals": [
+                    {
+                        "signalname": "AlarmSignal",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "PartsCount",
+                        "value": "58",
+                        "enddate": "Mon Aug 13 21:07:26 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleLoad_0_path1",
+                        "value": "0.0",
+                        "enddate": "Mon Aug 13 21:12:44 IST 2018"
+                    },
+                    {
+                        "signalname": "FeedRate",
+                        "value": "44336",
+                        "enddate": "Mon Aug 13 21:12:42 IST 2018"
+                    },
+                    {
+                        "signalname": "X_AXIS_BALL-SCREW_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Y_AXIS_BALL-SCREW_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Z_AXIS_BALL-SCREW_LIFE",
+                        "value": "2027",
+                        "enddate": "Mon Aug 13 19:49:45 IST 2018"
+                    },
+                    {
+                        "signalname": "X_AXIS_GUIDE-WAYS_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Y_AXIS_GUIDE-WAYS_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Z_AXIS_GUIDE-WAYS_LIFE",
+                        "value": "2027",
+                        "enddate": "Mon Aug 13 19:49:45 IST 2018"
+                    },
+                    {
+                        "signalname": "SPINDLE_BEARING_LIFE",
+                        "value": "2205",
+                        "enddate": "Mon Aug 13 19:37:06 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleSpeed",
+                        "value": "461",
+                        "enddate": "Mon Aug 13 21:12:42 IST 2018"
+                    },
+                    {
+                        "signalname": "MainProgram_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleTemp_0_path1_SP_FRD_9202097",
+                        "value": "43.0",
+                        "enddate": "Mon Aug 13 21:12:02 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleLeakResistData_0_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:23:01 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleTotalRev1_0_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:23:01 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleTotalRev2_0_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:23:01 IST 2018"
+                    },
+                    {
+                        "signalname": "MainProgram_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "ActProgram_path1_SP_FRD_9202097",
+                        "value": "//CNC_MEM/USER/PATH1/O8900",
+                        "enddate": "Mon Aug 13 21:12:31 IST 2018"
+                    },
+                    {
+                        "signalname": "SigSBK_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "OPERATE",
+                        "value": "false",
+                        "enddate": "Mon Aug 13 21:07:54 IST 2018"
+                    },
+                    {
+                        "signalname": "DISCONNECT",
+                        "value": "true",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "EMERGENCY",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "STOP",
+                        "value": "true",
+                        "enddate": "Mon Aug 13 21:07:54 IST 2018"
+                    },
+                    {
+                        "signalname": "SUSPEND",
+                        "value": "true",
+                        "enddate": "Mon Aug 13 20:02:18 IST 2018"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "5b71a6f736cf676c16cad76a",
+            "dateTime": {
+                "seconds": "1534174967",
+                "date": "2018-08-13",
+                "time": "15:42:47",
+                "day": "Mon",
+                "tz": "+0000 UTC"
+            },
+            "server": {
+                "USER": "www-data",
+                "HOME": "/var/www",
+                "HTTP_USER_AGENT": "Java/1.8.0_171",
+                "HTTP_ACCEPT_CHARSET": "big5, big5-hkscs, cesu-8, euc-jp, euc-kr, gb18030, gb2312, gbk, ibm-thai, ibm00858, ibm01140, ibm01141, ibm01142, ibm01143, ibm01144, ibm01145, ibm01146, ibm01147, ibm01148, ibm01149, ibm037, ibm1026, ibm1047, ibm273, ibm277, ibm278, ibm280, ibm284, ibm285, ibm290, ibm297, ibm420, ibm424, ibm437, ibm500, ibm775, ibm850, ibm852, ibm855, ibm857, ibm860, ibm861, ibm862, ibm863, ibm864, ibm865, ibm866, ibm868, ibm869, ibm870, ibm871, ibm918, iso-2022-cn, iso-2022-jp, iso-2022-jp-2, iso-2022-kr, iso-8859-1, iso-8859-13, iso-8859-15, iso-8859-2, iso-8859-3, iso-8859-4, iso-8859-5, iso-8859-6, iso-8859-7, iso-8859-8, iso-8859-9, jis_x0201, jis_x0212-1990, koi8-r, koi8-u, shift_jis, tis-620, us-ascii, utf-16, utf-16be, utf-16le, utf-32, utf-32be, utf-32le, utf-8, windows-1250, windows-1251, windows-1252, windows-1253, windows-1254, windows-1255, windows-1256, windows-1257, windows-1258, windows-31j, x-big5-hkscs-2001, x-big5-solaris, x-euc-jp-linux, x-euc-tw, x-eucjp-open, x-ibm1006, x-ibm1025, x-ibm1046, x-ibm1097, x-ibm1098, x-ibm1112, x-ibm1122, x-ibm1123, x-ibm1124, x-ibm1166, x-ibm1364, x-ibm1381, x-ibm1383, x-ibm300, x-ibm33722, x-ibm737, x-ibm833, x-ibm834, x-ibm856, x-ibm874, x-ibm875, x-ibm921, x-ibm922, x-ibm930, x-ibm933, x-ibm935, x-ibm937, x-ibm939, x-ibm942, x-ibm942c, x-ibm943, x-ibm943c, x-ibm948, x-ibm949, x-ibm949c, x-ibm950, x-ibm964, x-ibm970, x-iscii91, x-iso-2022-cn-cns, x-iso-2022-cn-gb, x-iso-8859-11, x-jis0208, x-jisautodetect, x-johab, x-macarabic, x-maccentraleurope, x-maccroatian, x-maccyrillic, x-macdingbat, x-macgreek, x-machebrew, x-maciceland, x-macroman, x-macromania, x-macsymbol, x-macthai, x-macturkish, x-macukraine, x-ms932_0213, x-ms950-hkscs, x-ms950-hkscs-xp, x-mswin-936, x-pck, x-sjis_0213, x-utf-16le-bom, x-utf-32be-bom, x-utf-32le-bom, x-windows-50220, x-windows-50221, x-windows-874, x-windows-949, x-windows-950, x-windows-iso2022jp",
+                "HTTP_CONTENT_TYPE": "application/json",
+                "HTTP_ACCEPT": "*/*",
+                "HTTP_CONTENT_LENGTH": "2533",
+                "HTTP_CONNECTION": "close",
+                "HTTP_HOST": "data4.iotworldlabs.io",
+                "REDIRECT_STATUS": "200",
+                "SERVER_NAME": "data4.iotworldlabs.io",
+                "SERVER_PORT": "443",
+                "SERVER_ADDR": "10.0.0.18",
+                "REMOTE_PORT": "52906",
+                "REMOTE_ADDR": "52.191.161.117",
+                "SERVER_SOFTWARE": "nginx/1.10.3",
+                "GATEWAY_INTERFACE": "CGI/1.1",
+                "HTTPS": "on",
+                "REQUEST_SCHEME": "https",
+                "SERVER_PROTOCOL": "HTTP/1.0",
+                "DOCUMENT_ROOT": "/var/www/data4.iotworldlabs.io",
+                "DOCUMENT_URI": "/DeviceId/HERO-SM-FRD-MTL.php",
+                "REQUEST_URI": "/DeviceId/HERO-SM-FRD-MTL",
+                "SCRIPT_NAME": "/DeviceId/HERO-SM-FRD-MTL.php",
+                "CONTENT_LENGTH": "2533",
+                "CONTENT_TYPE": "application/json",
+                "REQUEST_METHOD": "POST",
+                "QUERY_STRING": "",
+                "SCRIPT_FILENAME": "/var/www/data4.iotworldlabs.io/DeviceId/HERO-SM-FRD-MTL.php",
+                "PATH_INFO": "",
+                "FCGI_ROLE": "RESPONDER",
+                "PHP_SELF": "/DeviceId/HERO-SM-FRD-MTL.php",
+                "REQUEST_TIME_FLOAT": 1534174967.0128,
+                "REQUEST_TIME": 1534174967
+            },
+            "body": {
+                "DeviceId": "HERO-SM-FRD-MTL",
+                "TimeStamp": "Aug 13, 2018 9:12:44 PM",
+                "signals": [
+                    {
+                        "signalname": "AlarmSignal",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "PartsCount",
+                        "value": "58",
+                        "enddate": "Mon Aug 13 21:07:26 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleLoad_0_path1",
+                        "value": "1.0",
+                        "enddate": "Mon Aug 13 21:12:43 IST 2018"
+                    },
+                    {
+                        "signalname": "FeedRate",
+                        "value": "44336",
+                        "enddate": "Mon Aug 13 21:12:42 IST 2018"
+                    },
+                    {
+                        "signalname": "X_AXIS_BALL-SCREW_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Y_AXIS_BALL-SCREW_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Z_AXIS_BALL-SCREW_LIFE",
+                        "value": "2027",
+                        "enddate": "Mon Aug 13 19:49:45 IST 2018"
+                    },
+                    {
+                        "signalname": "X_AXIS_GUIDE-WAYS_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Y_AXIS_GUIDE-WAYS_LIFE",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "Z_AXIS_GUIDE-WAYS_LIFE",
+                        "value": "2027",
+                        "enddate": "Mon Aug 13 19:49:45 IST 2018"
+                    },
+                    {
+                        "signalname": "SPINDLE_BEARING_LIFE",
+                        "value": "2205",
+                        "enddate": "Mon Aug 13 19:37:06 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleSpeed",
+                        "value": "461",
+                        "enddate": "Mon Aug 13 21:12:42 IST 2018"
+                    },
+                    {
+                        "signalname": "MainProgram_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleTemp_0_path1_SP_FRD_9202097",
+                        "value": "43.0",
+                        "enddate": "Mon Aug 13 21:12:02 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleLeakResistData_0_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:23:01 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleTotalRev1_0_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:23:01 IST 2018"
+                    },
+                    {
+                        "signalname": "SpindleTotalRev2_0_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:23:01 IST 2018"
+                    },
+                    {
+                        "signalname": "MainProgram_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "ActProgram_path1_SP_FRD_9202097",
+                        "value": "//CNC_MEM/USER/PATH1/O8900",
+                        "enddate": "Mon Aug 13 21:12:31 IST 2018"
+                    },
+                    {
+                        "signalname": "SigSBK_path1_SP_FRD_9202097",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "OPERATE",
+                        "value": "false",
+                        "enddate": "Mon Aug 13 21:07:54 IST 2018"
+                    },
+                    {
+                        "signalname": "DISCONNECT",
+                        "value": "true",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "EMERGENCY",
+                        "value": "null",
+                        "enddate": "Mon Aug 13 18:22:40 IST 2018"
+                    },
+                    {
+                        "signalname": "STOP",
+                        "value": "true",
+                        "enddate": "Mon Aug 13 21:07:54 IST 2018"
+                    },
+                    {
+                        "signalname": "SUSPEND",
+                        "value": "true",
+                        "enddate": "Mon Aug 13 20:02:18 IST 2018"
+                    }
+                ]
+            }
+        }
+    ]
+}
