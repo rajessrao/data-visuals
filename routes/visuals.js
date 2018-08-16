@@ -60,17 +60,17 @@ router.get('/', function (req, res) {
 
 /**
  * @swagger
- * /visuals/somesample:
+ * /visuals/getMachineData:
  *   post:
- *     summary: sample post route
- *     description: Returns the sample data
+ *     summary: get Machine data including historicals
+ *     description: Returns the machine data including historicals
  *     tags:
  *       - Visuals
  *     produces:
  *       - application/json
  *     parameters:
- *       - name: device
- *         description: device Name
+ *       - name: machine
+ *         description: machine Name
  *         in: body
  *         required: true
  *         type: string
@@ -81,17 +81,15 @@ router.get('/', function (req, res) {
  *       500:
  *         description: Server Error
  */
-router.post('/somesample', function (req, res) {
+router.post('/getMachineData', function (req, res) {
     try {
-        visualService.refreshMachineData();
-        
-        var result = visualService.sampleData(req.body.machine);
+        var result = visualService.getMachineData();
 
         result.then(function (data) {
             res.status(200).send({ results: data });
         })
     } catch (e) {
-        log.error('Route /somesample/ failed with error', e);
+        log.error('Route /getMachineData/ failed with error', e);
         res.status(500).send(e);
     }
 });

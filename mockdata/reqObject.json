@@ -1,8 +1,10 @@
 {
-    "DeviceId": "HERO-HW-GRIND-MTL",
-    "MachineState": "8",
-    "PMDueDate": "12 Jun 2018",
-    "PartDueForReplacement": "7",
+    "Device": {
+        "DeviceId": "HERO-HW-GRIND-MTL",
+        "MachineState": "8",
+        "PMDueDate": "12 Jun 2018",
+        "PartDueForReplacement": "7"
+    },
     "Alarms": {
         "XSlideLoad": "42%",
         "XSlideLubPressure": "0.5",

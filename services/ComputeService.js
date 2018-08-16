@@ -103,6 +103,7 @@ module.exports = {
                             processedData[p][s].OEE = result.OEE;
                             processedData[p][s].breakDownTime = result.breakDownTime;
                             processedData[p][s].plannedCount = result.plannedCount;
+                            processedData[p][s].plansActuals = result.plansActuals;
                             delete processedData[p][s].data;
                         } else if (s !== 'OLE') {
                             delete processedData[p][s];
@@ -218,6 +219,14 @@ module.exports = {
 
         return { OEE: isNaN(OEE) ? 0 : (typeof (OEE) === 'number' ? OEE.toFixed(2) : parseFloat(OEE).toFixed(2)), plannedCount: PlannedCount };
     },
+    getDeviceDetails: function (machine) {
+        return {
+            'DeviceId': 'HERO-HW-GRIND-MTL',
+            'MachineState': '8',
+            'PMDueDate': '12 Jun 2018',
+            'PartDueForReplacement': '7'
+        }
+    },
     getAlarms: function (data, machine) {
         let SpindleOilFlow = '', SpindleOilTemp = '', CoolantFlow = '';
         const results = JSON.parse(data).results;
@@ -276,5 +285,39 @@ module.exports = {
             };
             return result;
         }
+    },
+    getHistoricals: function (data) {
+        let historicals = {};
+        let totalProduction = 0;
+        for (var key in data) {
+            if (!data.hasOwnProperty(key)) continue;
+            historicals[key] = {};
+            var obj = data[key];
+            for (var ikey in obj) {
+                let times = [], plans = [], actuals = [];
+                if (ikey === 'A' || ikey === 'B' || ikey === 'C') {
+                    if (!obj.hasOwnProperty(ikey)) continue;
+
+                    totalProduction += obj[ikey].partsCount;
+                    let plansActuals = obj[ikey].plansActuals;
+                    plansActuals.forEach(function (pa) {
+                        times.push(pa.Time);
+                        plans.push(pa.plan);
+                        actuals.push(pa.actual);
+                    });
+                    let currShift = {
+                        'AvgProduction': (obj[ikey].partsCount / 480 * 100).toFixed(2),
+                        'PlanVsActual': {
+                            'Time': times,
+                            'Plans': plans,
+                            'Actual': actuals
+                        }
+                    }
+                    historicals[key][ikey] = currShift;
+                }
+            }
+            historicals[key].TotalProduction = totalProduction;
+        }
+        return historicals;
     }
 }
