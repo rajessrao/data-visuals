@@ -19,25 +19,17 @@ module.exports = {
     },
     getMachineData: async function (machine = 'DM_hero_hw_grind_mtl') {
         var data = fs.readFileSync('./mockdata/DM_hero_hw_grind_mtl.json', 'utf8');
-        // var machine = 'DM_hero_hw_grind_mtl';
         var processedData = computeService.plotDataDateShiftWise(data, machine);
-        // console.log(machine, '\n=======================================\n', processedData, '\n');
         var deviceDetails = computeService.getDeviceDetails(machine);
-        // console.log(machine, '\n=======================================\n', deviceDetails, '\n');
         var alarms = computeService.getAlarms(data, machine);
-        // console.log(machine, '\n=======================================\n', alarms, '\n');
         var currentShift = computeService.getCurrShiftAccurals(processedData);
-        // console.log(machine, '\n=======================================\n', currentShift, '\n');
         var historicals = computeService.getHistoricals(processedData);
-        // console.log(machine, '\n=======================================\n', historicals, '\n');
-        let result = {
+        return {
             'Device': deviceDetails,
             'Alarms': alarms,
             'CurrentShift': currentShift,
             'Historical': historicals
         };
-        console.log(machine, '\n=======================================\n', result, '\n');
-        return result;
         /* var machines = ['DM_hero_sm_honn_mtl', 'DM_hero_sm_frd_mtl', 'DM_hero_sm_fb_mtl']; // DM_hero_hw_grind_mtl
         machines.forEach(function (machine) {
             https.get(config.apiEndpoint + '&a=find&ot=T_heromotocorp_iirp.' + machine + '&lmt=6000', (res) => {
